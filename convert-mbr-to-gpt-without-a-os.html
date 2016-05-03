@@ -96,15 +96,15 @@ list disk <span class="c1"># list all the disks</span>
 
 <h2>How to Convert MBR to GPT with DiskPart</h2>
 <div class="highlight"><pre>list disk
-select disk 0 # for laptop with only one disk, generally it is 0
-clean # clean everything on disk 0
-convert gpt # convert MBR to GPT
+<span class="k">select</span> disk <span class="m">0</span> <span class="c1"># for laptop with only one disk, generally it is 0</span>
+clean <span class="c1"># clean everything on disk 0</span>
+convert gpt <span class="c1"># convert MBR to GPT</span>
 
-# GPT okay, then for efi
-create partition efi size=100 # EFI partition
-create partition msr size=128 # As Microsoft recommended
-create partition primary size=100000 # the primary partition. You can set other partition after you install the OS.
-list partition # done
+<span class="c1"># GPT okay, then for efi</span>
+create partition efi <span class="nv">size</span><span class="o">=</span><span class="m">100</span> <span class="c1"># EFI partition</span>
+create partition msr <span class="nv">size</span><span class="o">=</span><span class="m">128</span> <span class="c1"># As Microsoft recommended</span>
+create partition primary <span class="nv">size</span><span class="o">=</span><span class="m">100000</span> <span class="c1"># the primary partition. You can set other partition after you install the OS.</span>
+list partition <span class="c1"># done</span>
 </pre></div>
 
 
