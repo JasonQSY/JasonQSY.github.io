@@ -168,24 +168,6 @@
                 return (query.length > 0);
             }
         </script>
-        <script type="text/javascript">
-            (function() {
-                WgateJs = {};
-                WgateJs.auto_auth=true;
-                WgateJs.gate_options={force:1,info:"basic"};
-                WgateJs.ready=function(){
-                    var wgateid=WgateJs.getWgateid();
-                    //alert(wgateid);
-                    WgateJs.getWgateUser(function(user){console.info(user)});
-                    alert(user);
-                }
-                var u=(("https:" == document.location.protocol) ? "https" : "http") + "://st.weixingate.com/";
-                u=u+'st/2321';
-                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
-                g.defer=true; g.async=true; g.src=u; s.parentNode.insertBefore(g,s);
-            })();
-        </script>
-
     </body>
     <!-- Theme: Elegant built for Pelican
     License : http://oncrashreboot.com/pelican-elegant -->
