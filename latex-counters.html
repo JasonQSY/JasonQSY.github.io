@@ -4,8 +4,8 @@
         <meta charset="utf-8"> 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Jason Qian" />
-        <meta name="copyright" content="Jason Qian" />
+        <meta name="author" content="JasonQSY" />
+        <meta name="copyright" content="JasonQSY" />
 
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
@@ -15,14 +15,14 @@
 <meta property="og:title" content="LaTeX Counters "/>
 <meta property="og:url" content="http://blog.jasonqian.me/latex-counters.html" />
 <meta property="og:description" content="Basic Command Although there are some default counters accepted by LaTeX, you can also create your own counters. Since I often use \usepackage[a4paper]{article}, there are some counters I often use. section subsection subsubsection page Sometimes, I create my own counter. \newcounter{exercise} Initially, the counter exercise is equal ..." />
-<meta property="og:site_name" content="JasonQian" />
-<meta property="og:article:author" content="Jason Qian" />
+<meta property="og:site_name" content="JasonQSY&#39;s Blog" />
+<meta property="og:article:author" content="JasonQSY" />
 <meta property="og:article:published_time" content="2016-02-17T00:00:00+08:00" />
 <meta property="" content="2016-02-17T00:00:00+08:00" />
 <meta name="twitter:title" content="LaTeX Counters ">
 <meta name="twitter:description" content="Basic Command Although there are some default counters accepted by LaTeX, you can also create your own counters. Since I often use \usepackage[a4paper]{article}, there are some counters I often use. section subsection subsubsection page Sometimes, I create my own counter. \newcounter{exercise} Initially, the counter exercise is equal ...">
 
-        <title>LaTeX Counters  · JasonQian
+        <title>LaTeX Counters  · JasonQSY&#39;s Blog
 </title>
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
@@ -49,7 +49,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="http://blog.jasonqian.me/"><span class=site-name>JasonQian</span></a>
+                    <a class="brand" href="http://blog.jasonqian.me/"><span class=site-name>JasonQSY's Blog</span></a>
                     <div class="nav-collapse collapse">
                         <ul class="nav pull-right top-menu">
                             <li ><a href="http://blog.jasonqian.me">Home</a></li>
@@ -88,17 +88,17 @@ Since I often use <code>\usepackage[a4paper]{article}</code>, there are some cou
 <li>page</li>
 </ul>
 <p>Sometimes, I create my own counter.</p>
-<div class="highlight"><pre><span class="k">\newcounter</span><span class="nb">{</span>exercise<span class="nb">}</span>
+<div class="highlight"><pre><span></span><span class="k">\newcounter</span><span class="nb">{</span>exercise<span class="nb">}</span>
 </pre></div>
 
 
 <p>Initially, the counter <code>exercise</code> is equal to zero. <code>\setcounter{}{}</code> can be used to intialize it.</p>
-<div class="highlight"><pre><span class="k">\setcounter</span><span class="nb">{</span>exercise<span class="nb">}{</span>1<span class="nb">}</span>
+<div class="highlight"><pre><span></span><span class="k">\setcounter</span><span class="nb">{</span>exercise<span class="nb">}{</span>1<span class="nb">}</span>
 </pre></div>
 
 
 <p>Actually, counter <code>exercise</code> is like a variable in a programming language. There are several ways to modify it (take C-family language for example).</p>
-<div class="highlight"><pre><span class="k">\stepcounter</span><span class="nb">{</span>exercise<span class="nb">}</span> <span class="c">% exercise++</span>
+<div class="highlight"><pre><span></span><span class="k">\stepcounter</span><span class="nb">{</span>exercise<span class="nb">}</span> <span class="c">% exercise++</span>
 <span class="k">\addtocounter</span><span class="nb">{</span>exercise<span class="nb">}{</span>1<span class="nb">}</span> <span class="c">% exercise += 1</span>
 <span class="k">\setcounter</span><span class="nb">{</span>exercise<span class="nb">}{</span>1<span class="nb">}</span> <span class="c">% exercise = 1</span>
 </pre></div>
@@ -106,13 +106,13 @@ Since I often use <code>\usepackage[a4paper]{article}</code>, there are some cou
 
 <p>The modification of deafault counters can take effect at once. For instance, if you <code>\stepcounter{page}</code> in page 7 of an article, the page number of this page will be 8, and that of the next page will be 9. The page number will change both on the specific page and table of contents. In other words, the count in the whole LaTeX document relies on the default counters.
 In addition, there are several ways to have access to the counters. However, what I often use is:</p>
-<div class="highlight"><pre><span class="k">\arabic</span><span class="nb">{</span>exercise<span class="nb">}</span> <span class="c">% print a (arabic) number</span>
+<div class="highlight"><pre><span></span><span class="k">\arabic</span><span class="nb">{</span>exercise<span class="nb">}</span> <span class="c">% print a (arabic) number</span>
 </pre></div>
 
 
 <h1>An Actual Usage</h1>
 <p>One of my courses has a series of assignments and one assignment has various exercises. Instead of entering the specific index of exercise such as <code>Exercise 8.1</code>, I want that everything can be automatic. That means, I only need enter the index of assignment at first.</p>
-<div class="highlight"><pre><span class="k">\newcounter</span><span class="nb">{</span>assigncount<span class="nb">}</span>
+<div class="highlight"><pre><span></span><span class="k">\newcounter</span><span class="nb">{</span>assigncount<span class="nb">}</span>
 <span class="k">\newcommand</span><span class="nb">{</span><span class="k">\newassignment</span><span class="nb">}</span>[1]
 <span class="nb">{</span>
     <span class="k">\setcounter</span><span class="nb">{</span>assigncount<span class="nb">}{</span>#1<span class="nb">}</span>
@@ -138,7 +138,7 @@ In addition, there are several ways to have access to the counters. However, wha
 
 
 <p>Then, when I write the assignment, I can just write as follows.</p>
-<div class="highlight"><pre><span class="k">\input</span> head-document
+<div class="highlight"><pre><span></span><span class="k">\input</span> head-document
 <span class="k">\newassignment</span><span class="nb">{</span>2<span class="nb">}</span>
 <span class="k">\begin</span><span class="nb">{</span>exercise<span class="nb">}</span>
     <span class="k">\item</span> Proof: <span class="c">%...</span>
@@ -219,8 +219,8 @@ In addition, there are several ways to have access to the counters. However, wha
 <footer>
 <div id="footer">
     <ul class="footer-content">
-        <li class="elegant-subtitle"><span class="site-name">JasonQian</span> - Posts About Tech</li>
-        <li class="elegant-license">Copyright &copy; 2016 Jason Qian. All Rights Reserved.</li>
+        <li class="elegant-subtitle"><span class="site-name">JasonQSY's Blog</span> - Posts About Tech</li>
+        <li class="elegant-license">Copyright &copy; 2016 JasonQSY. All Rights Reserved.</li>
         <li class="elegant-power">Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>. Theme: <a href="http://oncrashreboot.com/pelican-elegant" title="Theme Elegant Home Page">Elegant</a> by <a href="http://oncrashreboot.com" title="Talha Mansoor Home Page">Talha Mansoor</a></li>
     </ul>
 </div>

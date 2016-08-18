@@ -4,8 +4,8 @@
         <meta charset="utf-8"> 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Jason Qian" />
-        <meta name="copyright" content="Jason Qian" />
+        <meta name="author" content="JasonQSY" />
+        <meta name="copyright" content="JasonQSY" />
 
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
@@ -15,14 +15,14 @@
 <meta property="og:title" content="The Installation of Shadowsocks on Ubuntu Server "/>
 <meta property="og:url" content="http://blog.jasonqian.me/the-installation-of-shadowsocks-on-ubuntu-server.html" />
 <meta property="og:description" content="Environment Ubuntu Server 14.04 With apt-get, python2, pip2, vim I use shadowsocks-python My Ubuntu Server has apt-get, python2 and vim initially. Thus, I installed pip by apt-get. apt-get install python-pip Installation With the environment, it is very convenient to install shadowsocks. pip install shadowsocks Basic Configuration There is only ..." />
-<meta property="og:site_name" content="JasonQian" />
-<meta property="og:article:author" content="Jason Qian" />
+<meta property="og:site_name" content="JasonQSY&#39;s Blog" />
+<meta property="og:article:author" content="JasonQSY" />
 <meta property="og:article:published_time" content="2016-02-10T00:00:00+08:00" />
 <meta property="" content="2016-02-10T00:00:00+08:00" />
 <meta name="twitter:title" content="The Installation of Shadowsocks on Ubuntu Server ">
 <meta name="twitter:description" content="Environment Ubuntu Server 14.04 With apt-get, python2, pip2, vim I use shadowsocks-python My Ubuntu Server has apt-get, python2 and vim initially. Thus, I installed pip by apt-get. apt-get install python-pip Installation With the environment, it is very convenient to install shadowsocks. pip install shadowsocks Basic Configuration There is only ...">
 
-        <title>The Installation of Shadowsocks on Ubuntu Server  · JasonQian
+        <title>The Installation of Shadowsocks on Ubuntu Server  · JasonQSY&#39;s Blog
 </title>
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
@@ -49,7 +49,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="http://blog.jasonqian.me/"><span class=site-name>JasonQian</span></a>
+                    <a class="brand" href="http://blog.jasonqian.me/"><span class=site-name>JasonQSY's Blog</span></a>
                     <div class="nav-collapse collapse">
                         <ul class="nav pull-right top-menu">
                             <li ><a href="http://blog.jasonqian.me">Home</a></li>
@@ -85,26 +85,26 @@
 <li>I use shadowsocks-python</li>
 </ul>
 <p>My Ubuntu Server has apt-get, python2 and vim initially. Thus, I installed pip by apt-get.</p>
-<div class="highlight"><pre>apt-get install python-pip
+<div class="highlight"><pre><span></span>apt-get install python-pip
 </pre></div>
 
 
 <h1>Installation</h1>
 <p>With the environment, it is very convenient to install shadowsocks.</p>
-<div class="highlight"><pre>pip install shadowsocks
+<div class="highlight"><pre><span></span>pip install shadowsocks
 </pre></div>
 
 
 <h1>Basic Configuration</h1>
 <p>There is only one configuration json-file. It does not matter what you put it in and name it with <em>.js or </em>.json. Here I put it in /etc/shadowsocks/config.json</p>
-<div class="highlight"><pre>mkdir /etc/shadowsocks
+<div class="highlight"><pre><span></span>mkdir /etc/shadowsocks
 cd /etc/shadowsocks
 vim config.json
 </pre></div>
 
 
 <p>Then, input according to the documentation:(Basic)</p>
-<div class="highlight"><pre>{
+<div class="highlight"><pre><span></span>{
     &quot;server&quot;:&quot;100.000.000.00&quot;,
     &quot;server_port&quot;:8388,
     &quot;local_port&quot;:1080,
@@ -117,7 +117,7 @@ vim config.json
 
 <p>Replace 100.000.000.00 with your Server IP.
 Note that aes-256-cfb needs addtional tools like this: (Maybe it can also be installed by pip)</p>
-<div class="highlight"><pre>apt-get install python-m2crypto
+<div class="highlight"><pre><span></span>apt-get install python-m2crypto
 </pre></div>
 
 
@@ -125,31 +125,31 @@ Note that aes-256-cfb needs addtional tools like this: (Maybe it can also be ins
 <h2>Test</h2>
 <p>ssserver is installed with shadowsocks. (I guess its meaning is shadow-socks-server)
 You can test shadowsocks like this:</p>
-<div class="highlight"><pre>ssserver -c /etc/shadowsocks/config.json
+<div class="highlight"><pre><span></span>ssserver -c /etc/shadowsocks/config.json
 </pre></div>
 
 
 <p>Do not close the Terminal, and you can test if shadowsocks works normally.</p>
 <h2>Formal Setup</h2>
 <p>When it works normally, you can enter:</p>
-<div class="highlight"><pre>nohup ssserver -c /etc/shadowsocks/config.json &amp;gt; log&amp;amp;
+<div class="highlight"><pre><span></span>nohup ssserver -c /etc/shadowsocks/config.json &amp;gt; log&amp;amp;
 </pre></div>
 
 
 <p>Or  jusr auto-setup when starting (I prefer it).
 Add this line into /etc/rc.local</p>
-<div class="highlight"><pre>/usr/local/bin/ssserver -c /etc/shadowsocks/config.js -d start
+<div class="highlight"><pre><span></span>/usr/local/bin/ssserver -c /etc/shadowsocks/config.js -d start
 </pre></div>
 
 
 <p>Then reboot the vps:</p>
-<div class="highlight"><pre>reboot
+<div class="highlight"><pre><span></span>reboot
 </pre></div>
 
 
 <h1>Multiple users</h1>
 <p>The basic configuration is just for single-user. If you want to share shadowsocks with your friends, you can assign specfic port and password to them.</p>
-<div class="highlight"><pre>{
+<div class="highlight"><pre><span></span>{
     &quot;server&quot;:&quot;100.000.000.00&quot;,
     &quot;timeout&quot;:600,
     &quot;method&quot;:&quot;aes-256-cfb&quot;,
@@ -241,8 +241,8 @@ Add this line into /etc/rc.local</p>
 <footer>
 <div id="footer">
     <ul class="footer-content">
-        <li class="elegant-subtitle"><span class="site-name">JasonQian</span> - Posts About Tech</li>
-        <li class="elegant-license">Copyright &copy; 2016 Jason Qian. All Rights Reserved.</li>
+        <li class="elegant-subtitle"><span class="site-name">JasonQSY's Blog</span> - Posts About Tech</li>
+        <li class="elegant-license">Copyright &copy; 2016 JasonQSY. All Rights Reserved.</li>
         <li class="elegant-power">Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>. Theme: <a href="http://oncrashreboot.com/pelican-elegant" title="Theme Elegant Home Page">Elegant</a> by <a href="http://oncrashreboot.com" title="Talha Mansoor Home Page">Talha Mansoor</a></li>
     </ul>
 </div>

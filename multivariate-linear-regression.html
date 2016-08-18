@@ -4,8 +4,8 @@
         <meta charset="utf-8"> 
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Jason Qian" />
-        <meta name="copyright" content="Jason Qian" />
+        <meta name="author" content="JasonQSY" />
+        <meta name="copyright" content="JasonQSY" />
 
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
@@ -15,14 +15,14 @@
 <meta property="og:title" content="Multivariate Linear Regression "/>
 <meta property="og:url" content="http://blog.jasonqian.me/multivariate-linear-regression.html" />
 <meta property="og:description" content="This post is my note of Andrew Ng&#39;s Machine Learning course. It concludes the contents of Week 1 &amp; Week 2. Meanwhile, the whole post is a problem introduced in Assignment: Linear Regression. Although the course teaches Octave, I have access to Matlab through Academic Licence of my intitute. Thus ..." />
-<meta property="og:site_name" content="JasonQian" />
-<meta property="og:article:author" content="Jason Qian" />
+<meta property="og:site_name" content="JasonQSY&#39;s Blog" />
+<meta property="og:article:author" content="JasonQSY" />
 <meta property="og:article:published_time" content="2016-02-11T00:00:00+08:00" />
 <meta property="" content="2016-02-11T00:00:00+08:00" />
 <meta name="twitter:title" content="Multivariate Linear Regression ">
 <meta name="twitter:description" content="This post is my note of Andrew Ng&#39;s Machine Learning course. It concludes the contents of Week 1 &amp; Week 2. Meanwhile, the whole post is a problem introduced in Assignment: Linear Regression. Although the course teaches Octave, I have access to Matlab through Academic Licence of my intitute. Thus ...">
 
-        <title>Multivariate Linear Regression  · JasonQian
+        <title>Multivariate Linear Regression  · JasonQSY&#39;s Blog
 </title>
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
@@ -49,7 +49,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="http://blog.jasonqian.me/"><span class=site-name>JasonQian</span></a>
+                    <a class="brand" href="http://blog.jasonqian.me/"><span class=site-name>JasonQSY's Blog</span></a>
                     <div class="nav-collapse collapse">
                         <ul class="nav pull-right top-menu">
                             <li ><a href="http://blog.jasonqian.me">Home</a></li>
@@ -159,7 +159,7 @@ Examples:</p>
 5
 6
 7
-8</pre></div></td><td class="code"><div class="highlight"><pre><span class="n">data</span> <span class="p">=</span> <span class="n">load</span><span class="p">(</span><span class="s">&#39;ex1data2.txt&#39;</span><span class="p">);</span>
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="p">=</span> <span class="n">load</span><span class="p">(</span><span class="s">&#39;ex1data2.txt&#39;</span><span class="p">);</span>
 <span class="n">sz</span> <span class="p">=</span> <span class="nb">size</span><span class="p">(</span><span class="n">data</span><span class="p">);</span>
 <span class="n">m</span> <span class="p">=</span> <span class="n">sz</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
 <span class="n">n</span> <span class="p">=</span> <span class="n">sz</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span>
@@ -200,7 +200,7 @@ For any j,</p>
 14
 15
 16
-17</pre></div></td><td class="code"><div class="highlight"><pre><span class="k">function</span><span class="w"> </span>J <span class="p">=</span><span class="w"> </span><span class="nf">computeCost</span><span class="p">(</span>X, y, theta<span class="p">)</span><span class="w"></span>
+17</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">function</span><span class="w"> </span>J <span class="p">=</span><span class="w"> </span><span class="nf">computeCost</span><span class="p">(</span>X, y, theta<span class="p">)</span><span class="w"></span>
 <span class="w">    </span><span class="n">m</span> <span class="p">=</span> <span class="nb">length</span><span class="p">(</span><span class="n">y</span><span class="p">);</span>
     <span class="n">h</span> <span class="p">=</span> <span class="n">X</span> <span class="o">*</span> <span class="n">theta</span><span class="p">;</span>
     <span class="n">J</span> <span class="p">=</span> <span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">m</span><span class="p">)</span> <span class="o">*</span> <span class="n">sum</span><span class="p">((</span><span class="n">h</span><span class="o">-</span><span class="n">y</span><span class="p">)</span><span class="o">.^</span><span class="mi">2</span><span class="p">);</span>
@@ -359,8 +359,8 @@ For any j,</p>
 <footer>
 <div id="footer">
     <ul class="footer-content">
-        <li class="elegant-subtitle"><span class="site-name">JasonQian</span> - Posts About Tech</li>
-        <li class="elegant-license">Copyright &copy; 2016 Jason Qian. All Rights Reserved.</li>
+        <li class="elegant-subtitle"><span class="site-name">JasonQSY's Blog</span> - Posts About Tech</li>
+        <li class="elegant-license">Copyright &copy; 2016 JasonQSY. All Rights Reserved.</li>
         <li class="elegant-power">Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>. Theme: <a href="http://oncrashreboot.com/pelican-elegant" title="Theme Elegant Home Page">Elegant</a> by <a href="http://oncrashreboot.com" title="Talha Mansoor Home Page">Talha Mansoor</a></li>
     </ul>
 </div>
