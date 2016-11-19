@@ -1,0 +1,8 @@
+.navbar-inner {
+    background: #ffffff;
+    background-image: linear-gradient(tobottom, #ffffff, #ffffff);
+}
+
+.search-query {
+    border-radius: 5px;
+}
