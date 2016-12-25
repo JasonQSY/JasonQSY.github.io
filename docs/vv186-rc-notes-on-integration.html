@@ -14,13 +14,13 @@
 
 <meta property="og:title" content="Vv186 RC Notes on Integration "/>
 <meta property="og:url" content="http://blog.jasonqian.me/vv186-rc-notes-on-integration.html" />
-<meta property="og:description" content="Step function $$P=\{a_0,a_1,...,a_n\} $$ The integration is the area under the functions. $$\int_a^b \phi =I_p(\phi)=\sum_{i=1}^n(a_i-a_{i-1})$$ Bounded: $$ \sup_{x\in Domain}|f(x)|&lt;\infty $$ Prove a function is regulated: Find a step function uniformly converges to it. $$ C([a,b])\subset Reg([a,b]) $$ ...if (!document.getElementById(&#39;mathjaxscript_pelican_#%@#$@#&#39;)) { var align = &#34;center&#34;, indent = &#34;0em&#34;, linebreak = &#34;false&#34;; if (false) { align = (screen.width" />
+<meta property="og:description" content="Step function $$P={a_0,a_1,...,a_n} $$ The integration is the area under the functions. $$\int_a^b \phi =I_p(\phi)=\sum_{i=1}^n(a_i-a_{i-1})$$ Bounded: $$ \sup_{x\in Domain}|f(x)|&lt;\infty $$ Prove a function is regulated: Find a step function uniformly converges to it. $$ C([a,b])\subset …" />
 <meta property="og:site_name" content="JasonQSY&#39;s Blog" />
 <meta property="og:article:author" content="JasonQSY" />
 <meta property="og:article:published_time" content="2015-12-03T00:00:00+08:00" />
 <meta property="" content="2016-02-10T00:00:00+08:00" />
 <meta name="twitter:title" content="Vv186 RC Notes on Integration ">
-<meta name="twitter:description" content="Step function $$P=\{a_0,a_1,...,a_n\} $$ The integration is the area under the functions. $$\int_a^b \phi =I_p(\phi)=\sum_{i=1}^n(a_i-a_{i-1})$$ Bounded: $$ \sup_{x\in Domain}|f(x)|&lt;\infty $$ Prove a function is regulated: Find a step function uniformly converges to it. $$ C([a,b])\subset Reg([a,b]) $$ ...if (!document.getElementById(&#39;mathjaxscript_pelican_#%@#$@#&#39;)) { var align = &#34;center&#34;, indent = &#34;0em&#34;, linebreak = &#34;false&#34;; if (false) { align = (screen.width">
+<meta name="twitter:description" content="Step function $$P={a_0,a_1,...,a_n} $$ The integration is the area under the functions. $$\int_a^b \phi =I_p(\phi)=\sum_{i=1}^n(a_i-a_{i-1})$$ Bounded: $$ \sup_{x\in Domain}|f(x)|&lt;\infty $$ Prove a function is regulated: Find a step function uniformly converges to it. $$ C([a,b])\subset …">
 
         <title>Vv186 RC Notes on Integration  · JasonQSY&#39;s Blog
 </title>
@@ -79,152 +79,84 @@
 
             
             <h2>Step function</h2>
-<div class="math">$$P=\{a_0,a_1,...,a_n\} $$</div>
+<p>$$P={a_0,a_1,...,a_n} $$</p>
 <p>The integration is the area under the functions.</p>
-<div class="math">$$\int_a^b \phi =I_p(\phi)=\sum_{i=1}^n(a_i-a_{i-1})$$</div>
+<p>$$\int_a^b \phi =I_p(\phi)=\sum_{i=1}^n(a_i-a_{i-1})$$</p>
 <p>Bounded: </p>
-<div class="math">$$ \sup_{x\in Domain}|f(x)|&lt;\infty $$</div>
+<p>$$ \sup_{x\in Domain}|f(x)|&lt;\infty $$</p>
 <p>Prove a function is regulated: Find a step function uniformly converges to it.</p>
-<div class="math">$$ C([a,b])\subset Reg([a,b]) $$</div>
+<p>$$ C([a,b])\subset Reg([a,b]) $$</p>
 <h2>Darboux Intergral</h2>
 <p>Find two step function.</p>
-<div class="math">$$ v &lt; f &lt; u $$</div>
-<div class="math">$$ \sup \int_a^bv=\inf \int_a^bu :=\int_a^b f $$</div>
-<div class="math">$$ f \subset Reg([a,b]) \Rightarrow Darboux $$</div>
+<p>$$ v &lt; f &lt; u $$ 
+$$ \sup \int_a^bv=\inf \int_a^bu :=\int_a^b f $$
+$$ f \subset Reg([a,b]) \Rightarrow Darboux $$</p>
 <p>Darboux Integral is more general.</p>
 <h2>Riemann Integral</h2>
 <p>Only one step function.</p>
-<div class="math">$$P=\{a_0,a_1,...,a_n\} $$</div>
-<div class="math">$$ \Xi=\{\xi_1,\xi_2,...,\xi_n\} $$</div>
-<div class="math">$$ \int_a^b\phi = \sum_{k=1}^n f(\xi_k)(x_k-x_{k-1}) $$</div>
+<p>$$P={a_0,a_1,...,a_n} $$
+$$ \Xi={\xi_1,\xi_2,...,\xi_n} $$
+$$ \int_a^b\phi = \sum_{k=1}^n f(\xi_k)(x_k-x_{k-1}) $$</p>
 <p>We have proved that</p>
-<div class="math">$$ Darboux \Leftrightarrow Riemann $$</div>
+<p>$$ Darboux \Leftrightarrow Riemann $$</p>
 <h2>Calculation</h2>
-<p>With <span class="math">\(F'=f\)</span>,
-</p>
-<div class="math">$$ \int_a^b f(t)\;\mathrm{dt}=F(b)-F(a) $$</div>
-<p>
+<p>With $F'=f$,
+$$ \int_a^b f(t)\;\mathrm{dt}=F(b)-F(a) $$
 Substitution rule
-eg1. With <span class="math">\(y=3+2x\)</span> and <span class="math">\(dy=2dx\)</span></p>
-<div class="math">$$ \int_1^3 \frac{dx}{3+2x}=\int_5^9\frac{dy}{2y}=\frac{1}{2}\int_5^9\frac{dy}{y} =\cdots$$</div>
-<div class="math">$$ f=\frac{x+5}{x^2-2x-3}=\frac{A}{x-3}+\frac{B}{x+1} $$</div>
-<div class="math">$$ f=\frac{x^2+6x+4}{(x-1)^2(x+2)}=\frac{A}{x-1}+\frac{B}{x+2}+\frac{C}{(x-1)^2}$$</div>
+eg1. With $y=3+2x$ and $dy=2dx$</p>
+<p>$$ \int_1^3 \frac{dx}{3+2x}=\int_5^9\frac{dy}{2y}=\frac{1}{2}\int_5^9\frac{dy}{y} =\cdots$$
+$$ f=\frac{x+5}{x^2-2x-3}=\frac{A}{x-3}+\frac{B}{x+1} $$
+$$ f=\frac{x^2+6x+4}{(x-1)^2(x+2)}=\frac{A}{x-1}+\frac{B}{x+2}+\frac{C}{(x-1)^2}$$</p>
 <p>Integration By Parts
 ...</p>
 <h2>Exercise</h2>
-<div class="math">$$\int \; x \arctan{x} \;\mathrm{dx} $$</div>
-<div class="math">$$=\frac{x^2}{2} \arctan{x} - \frac{1}{2} \int \frac{x^2}{1+x^2} dx $$</div>
-<div class="math">$$\int \frac{x^2}{1+x^2}dx=\int dx - \int \frac{1}{1+x^2}dx $$</div>
-<p>Remember <span class="math">\(\int arctanx\)</span></p>
-<div class="math">$$\int \sqrt{a^2-x^2}dx \; \textrm{Let } x=a\cos{\theta} $$</div>
-<div class="math">$$\int \sqrt{a^2+x^2}dx \; \textrm{Let } x=a\tan{\theta} $$</div>
-<div class="math">$$\lim_{n\to\infty}\int_a^n=\int_a^\infty f $$</div>
-<div class="math">$$\int_{-\infty}^{\infty}f=\int_{\infty}^cf+\int_{c}^{\infty}f $$</div>
+<p>$$\int \; x \arctan{x} \;\mathrm{dx} $$
+$$=\frac{x^2}{2} \arctan{x} - \frac{1}{2} \int \frac{x^2}{1+x^2} dx $$
+$$\int \frac{x^2}{1+x^2}dx=\int dx - \int \frac{1}{1+x^2}dx $$ </p>
+<p>Remember $\int arctanx$</p>
+<p>$$\int \sqrt{a^2-x^2}dx \; \textrm{Let } x=a\cos{\theta} $$
+$$\int \sqrt{a^2+x^2}dx \; \textrm{Let } x=a\tan{\theta} $$</p>
+<p>$$\lim_{n\to\infty}\int_a^n=\int_a^\infty f $$
+$$\int_{-\infty}^{\infty}f=\int_{\infty}^cf+\int_{c}^{\infty}f $$</p>
 <h2>Euler-Gamma Function</h2>
-<div class="math">$$\Gamma(t)=\int_0^\infty z^{t-1}e^{-z} dz $$</div>
-<div class="math">$$\Gamma(n+1)=n \cdot \Gamma(n) $$</div>
+<p>$$\Gamma(t)=\int_0^\infty z^{t-1}e^{-z} dz $$
+$$\Gamma(n+1)=n \cdot \Gamma(n) $$</p>
 <p>Define factorial.</p>
-<div class="math">$$\Gamma(\frac{1}{2}+n)=\frac{(2n)!}{4^nn!}\sqrt{\pi} $$</div>
-<div class="math">$$\Gamma(\frac{1}{2}-n)=\frac{(-4)^n n!}{(2n)!}\sqrt{\pi} $$</div>
+<p>$$\Gamma(\frac{1}{2}+n)=\frac{(2n)!}{4^nn!}\sqrt{\pi} $$
+$$\Gamma(\frac{1}{2}-n)=\frac{(-4)^n n!}{(2n)!}\sqrt{\pi} $$</p>
 <p>Keep in mind</p>
-<div class="math">$$\int_a^bf(x)dx=(b-a)\sup_{x\in[a,b]}|f(x)| $$</div>
+<p>$$\int_a^bf(x)dx=(b-a)\sup_{x\in[a,b]}|f(x)| $$</p>
 <h2>Exercise</h2>
-<div class="math">$$f,g\in C([a,b]),\forall x\in[a,b],g\ge 0$$</div>
+<p>$$f,g\in C([a,b]),\forall x\in[a,b],g\ge 0$$</p>
 <p>Prove:</p>
-<div class="math">$$ \exists S\in[a,b], \int_a^bf(x)g(x) dx=f(s)\int_a^bg(x)dx $$</div>
-<p>
-<strong>Proof</strong>: <span class="math">\(f\)</span> is a continuous function defined on a closed inteval. Thus, it must attain its maximum and minimum. Let
-</p>
-<div class="math">$$ m:=\min_{x\in[a,b]}f(x), M:=\max_{x\in[a,b]}f(x)$$</div>
+<p>$$ \exists S\in[a,b], \int_a^bf(x)g(x) dx=f(s)\int_a^bg(x)dx $$
+<strong>Proof</strong>: $f$ is a continuous function defined on a closed inteval. Thus, it must attain its maximum and minimum. Let
+$$ m:=\min_{x\in[a,b]}f(x), M:=\max_{x\in[a,b]}f(x)$$</p>
 <p>Thus,</p>
-<div class="math">$$ m\cdot\int_a^bg(x)dx \le \int_a^b f(x)g(x) dx \le M\cdot \int_a^b g(x)dx $$</div>
-<p>Let <span class="math">\(k\cdot \int_a^bg(x)dx=\int_a^b f(x)g(x) dx\)</span>, then <span class="math">\(m\le k \le M\)</span>.</p>
+<p>$$ m\cdot\int_a^bg(x)dx \le \int_a^b f(x)g(x) dx \le M\cdot \int_a^b g(x)dx $$</p>
+<p>Let $k\cdot \int_a^bg(x)dx=\int_a^b f(x)g(x) dx$, then $m\le k \le M$.</p>
 <p>It means that</p>
-<div class="math">$$ \exists s\in[a,b], \; f(s)=k $$</div>
+<p>$$ \exists s\in[a,b], \; f(s)=k $$</p>
 <h2>Exercise</h2>
 <p>Calculate:</p>
-<div class="math">$$ \int_0^\infty \frac{v^2}{v^4+1}dv $$</div>
+<p>$$ \int_0^\infty \frac{v^2}{v^4+1}dv $$</p>
 <p>Solution:</p>
-<p>Set <span class="math">\(w=1/v\)</span> such that <span class="math">\(dw=-\frac{dv}{v^2}\)</span>, thus
-</p>
-<div class="math">$$\int_0^\infty \frac{v^2}{1+v^4}dv=\int_\infty^0 \frac{-dw}{w^4+1}=\int^\infty_0 \frac{dw}{w^4+1} $$</div>
-<p>
+<p>Set $w=1/v$ such that $dw=-\frac{dv}{v^2}$, thus
+$$\int_0^\infty \frac{v^2}{1+v^4}dv=\int_\infty^0 \frac{-dw}{w^4+1}=\int^\infty_0 \frac{dw}{w^4+1} $$
 Thus,
-</p>
-<div class="math">$$\int_0^\infty \frac{v^2}{1+v^4}dv=\int_0^\infty \frac{dv}{1+v^4} $$</div>
-<p>
+$$\int_0^\infty \frac{v^2}{1+v^4}dv=\int_0^\infty \frac{dv}{1+v^4} $$
 Thus,
-</p>
-<div class="math">$$ 2\cdot \int_0^\infty \frac{v^2}{1+v^4}dv=\int_0^\infty \frac{v^2+1}{1+v^4}dv=\int_0^\infty \frac{1+1/v^2}{v^2+1/v^2}dv $$</div>
-<p>
-Let <span class="math">\(t=v-1/v\)</span> such that <span class="math">\(dt=(1+1/v^2)dv, then
-<div class="math">$$\int_{-\infty}^{\infty}\frac{dt}{t^2+2}$$</div>
-<div class="math">$$=\frac{1}{2}\int_{-\infty}^{\infty}\frac{dt}{(t/\sqrt{2})^2+1}$$</div>
-<div class="math">$$=\frac{\sqrt{2}}{2} \int_{-\infty}^{\infty}\frac{dk}{k^2+1}$$</div>
-<div class="math">$$=\frac{\sqrt{2}}{2} \pi $$</div>
-Hence, the result is $\frac{\sqrt{2}}{4}\)</span></p>
-<p>Meet <span class="math">\(v^4+1\)</span>, try change <span class="math">\(v^2+1/v^2\)</span> and substitute <span class="math">\(v\pm 1/v\)</span></p>
+$$ 2\cdot \int_0^\infty \frac{v^2}{1+v^4}dv=\int_0^\infty \frac{v^2+1}{1+v^4}dv=\int_0^\infty \frac{1+1/v^2}{v^2+1/v^2}dv $$
+Let $t=v-1/v$ such that $dt=(1+1/v^2)dv, then
+$$\int_{-\infty}^{\infty}\frac{dt}{t^2+2}$$
+$$=\frac{1}{2}\int_{-\infty}^{\infty}\frac{dt}{(t/\sqrt{2})^2+1}$$
+$$=\frac{\sqrt{2}}{2} \int_{-\infty}^{\infty}\frac{dk}{k^2+1}$$
+$$=\frac{\sqrt{2}}{2} \pi $$
+Hence, the result is $\frac{\sqrt{2}}{4}$</p>
+<p>Meet $v^4+1$, try change $v^2+1/v^2$ and substitute $v\pm 1/v$</p>
 <h2>Exercise</h2>
-<p>If <span class="math">\(f\)</span> is an odd function,
-</p>
-<div class="math">$$0=\int_{-a}^a f(x)dx$$</div>
-<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "center",
-        indent = "0em",
-        linebreak = "false";
-
-    if (false) {
-        align = (screen.width < 768) ? "left" : align;
-        indent = (screen.width < 768) ? "0em" : indent;
-        linebreak = (screen.width < 768) ? 'true' : linebreak;
-    }
-
-    var mathjaxscript = document.createElement('script');
-    var location_protocol = (false) ? 'https' : document.location.protocol;
-    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
-        "MathJax.Hub.Config({" +
-        "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
-        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: '"+ align +"'," +
-        "    displayIndent: '"+ indent +"'," +
-        "    showMathMenu: true," +
-        "    messageStyle: 'normal'," +
-        "    tex2jax: { " +
-        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
-        "        displayMath: [ ['$$','$$'] ]," +
-        "        processEscapes: true," +
-        "        preview: 'TeX'," +
-        "    }, " +
-        "    'HTML-CSS': { " +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
-        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
-        "    }, " +
-        "}); " +
-        "if ('default' !== 'default') {" +
-            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-        "}";
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-}
-</script>
+<p>If $f$ is an odd function,
+$$0=\int_{-a}^a f(x)dx$$</p>
             
             <section>
 <div class="accordion" id="accordion2">

@@ -14,13 +14,13 @@
 
 <meta property="og:title" content="Multivariate Linear Regression "/>
 <meta property="og:url" content="http://blog.jasonqian.me/multivariate-linear-regression.html" />
-<meta property="og:description" content="This post is my note of Andrew Ng&#39;s Machine Learning course. It concludes the contents of Week 1 &amp; Week 2. Meanwhile, the whole post is a problem introduced in Assignment: Linear Regression. Although the course teaches Octave, I have access to Matlab through Academic Licence of my intitute. Thus ..." />
+<meta property="og:description" content="This post is my note of Andrew Ng&#39;s Machine Learning course. It concludes the contents of Week 1 &amp; Week 2. Meanwhile, the whole post is a problem introduced in Assignment: Linear Regression. Although the course teaches Octave, I have access to Matlab through Academic Licence of my intitute. Thus, I …" />
 <meta property="og:site_name" content="JasonQSY&#39;s Blog" />
 <meta property="og:article:author" content="JasonQSY" />
 <meta property="og:article:published_time" content="2016-02-11T00:00:00+08:00" />
 <meta property="" content="2016-02-11T00:00:00+08:00" />
 <meta name="twitter:title" content="Multivariate Linear Regression ">
-<meta name="twitter:description" content="This post is my note of Andrew Ng&#39;s Machine Learning course. It concludes the contents of Week 1 &amp; Week 2. Meanwhile, the whole post is a problem introduced in Assignment: Linear Regression. Although the course teaches Octave, I have access to Matlab through Academic Licence of my intitute. Thus ...">
+<meta name="twitter:description" content="This post is my note of Andrew Ng&#39;s Machine Learning course. It concludes the contents of Week 1 &amp; Week 2. Meanwhile, the whole post is a problem introduced in Assignment: Linear Regression. Although the course teaches Octave, I have access to Matlab through Academic Licence of my intitute. Thus, I …">
 
         <title>Multivariate Linear Regression  · JasonQSY&#39;s Blog
 </title>
@@ -85,7 +85,7 @@
 <table>
 <thead>
 <tr>
-<th>Size(feet<span class="math">\(^2\)</span>)</th>
+<th>Size(feet$^2$)</th>
 <th>Number of bedrooms</th>
 <th>Price</th>
 </tr>
@@ -115,43 +115,43 @@
 </table>
 <p>which is called a training set. We decide to construct a model by multivariate linear regression to assess the price of the house.</p>
 <h1>Basic Definition</h1>
-<p>The number of houses is 47. We represent 47 with m, i.e. number of the training examples. (<span class="math">\(m=47\)</span>)</p>
-<p>We use <span class="math">\(x\)</span> to represent a input value and <span class="math">\(y\)</span> to represent an output value. In this problem, <span class="math">\(x_1\)</span> is the size, <span class="math">\(x_2\)</span> is the number of bedrooms and <span class="math">\(y\)</span> is the price.</p>
-<p>It can be seen that there are 2 types of input values, i.e. features. We represent feature with n. (<span class="math">\(n=2\)</span>)</p>
+<p>The number of houses is 47. We represent 47 with m, i.e. number of the training examples. ($m=47$)</p>
+<p>We use $x$ to represent a input value and $y$ to represent an output value. In this problem, $x_1$ is the size, $x_2$ is the number of bedrooms and $y$ is the price.</p>
+<p>It can be seen that there are 2 types of input values, i.e. features. We represent feature with n. ($n=2$)</p>
 <p>Examples:</p>
-<div class="math">$$x_1^{(3)} = 2400 $$</div>
-<div class="math">$$ x_2^{(2)} = 3 $$</div>
-<div class="math">$$ y^{(2)} = 399900 $$</div>
-<p>With linear algebra, we use a matrix X to represent the input value and a m-dimensional vector y to represent the output value. However, we add 1 one the left as the feature of constant <span class="math">\(\theta_0\)</span>.
+<p>$$x_1^{(3)} = 2400 $$
+$$ x_2^{(2)} = 3 $$
+$$ y^{(2)} = 399900 $$</p>
+<p>With linear algebra, we use a matrix X to represent the input value and a m-dimensional vector y to represent the output value. However, we add 1 one the left as the feature of constant $\theta_0$.
 Examples:</p>
-<div class="math">$$X = \left(\begin{matrix} 
-1 &amp; 2104 &amp; 3 \\
-1 &amp; 1600 &amp; 3 \\
-1 &amp; 2400 &amp; 3 \\
+<p>$$X = \left(\begin{matrix} 
+1 &amp; 2104 &amp; 3 \
+1 &amp; 1600 &amp; 3 \
+1 &amp; 2400 &amp; 3 \
 &amp; \cdots \cdots &amp;
-\end{matrix}\right)$$</div>
-<div class="math">$$ y = \left(\begin{matrix}
-399900 \\
-329900 \\
-369000 \\
+\end{matrix}\right)$$</p>
+<p>$$ y = \left(\begin{matrix}
+399900 \
+329900 \
+369000 \
 \cdots 
-\end{matrix} \right) $$</div>
+\end{matrix} \right) $$</p>
 <p>The model is based on a hypothesis, which is multivariate linear regression:</p>
-<div class="math">$$ h_\theta = \theta_0 + \theta_1 x_1 + \theta_2 x_2 $$</div>
+<p>$$ h_\theta = \theta_0 + \theta_1 x_1 + \theta_2 x_2 $$</p>
 <p>Let </p>
-<div class="math">$$ \theta = ( \theta_0 \; \theta_1 \; \theta_2 ) $$</div>
+<p>$$ \theta = ( \theta_0 \; \theta_1 \; \theta_2 ) $$</p>
 <p>We have</p>
-<div class="math">$$h_\theta(x) = \theta^T X$$</div>
-<p>However, the hypothesis is generally different from the realistic data and we need a method to assess if the hypothesis is good enough. The method is cost function <span class="math">\(J(\theta)\)</span>.</p>
-<div class="math">$$ J(\theta_0, \theta_1, \theta_2) = \frac{1}{2m} \sum_{i=1}^{m}(h_\theta(x^{(i)}) - y^{(i)})^2$$</div>
+<p>$$h_\theta(x) = \theta^T X$$</p>
+<p>However, the hypothesis is generally different from the realistic data and we need a method to assess if the hypothesis is good enough. The method is cost function $J(\theta)$.</p>
+<p>$$ J(\theta_0, \theta_1, \theta_2) = \frac{1}{2m} \sum_{i=1}^{m}(h_\theta(x^{(i)}) - y^{(i)})^2$$</p>
 <p>which is equivalent to</p>
-<div class="math">$$ J(\theta) = \frac{1}{2m} \sum_{i=1}^{m}(h_\theta(x) - y^{(i)})^2$$</div>
+<p>$$ J(\theta) = \frac{1}{2m} \sum_{i=1}^{m}(h_\theta(x) - y^{(i)})^2$$</p>
 <p>(The equation need modifying according to linear algebra. I do not know how to modify currently. Maybe I'll modify it in the future.)</p>
-<p>These are basic definitions on linear regression. And what we want to solve is the n-dimensional vector <span class="math">\(\theta\)</span> when <span class="math">\(J(\theta)\)</span> attains its minimum.</p>
+<p>These are basic definitions on linear regression. And what we want to solve is the n-dimensional vector $\theta$ when $J(\theta)$ attains its minimum.</p>
 <h1>Mathematical Method</h1>
-<p>It is possible for us to slove <span class="math">\(\theta\)</span> with calculus. Set <span class="math">\(\frac{\partial}{\partial \theta}J(\theta) = 0\)</span>, we find that at this time,</p>
-<div class="math">$$\theta = (X^T X)^{-1} X^T y $$</div>
-<p>Here is the matlab code which calculate <span class="math">\(\theta\)</span>.</p>
+<p>It is possible for us to slove $\theta$ with calculus. Set $\frac{\partial}{\partial \theta}J(\theta) = 0$, we find that at this time,</p>
+<p>$$\theta = (X^T X)^{-1} X^T y $$</p>
+<p>Here is the matlab code which calculate $\theta$.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -171,18 +171,18 @@ Examples:</p>
 </td></tr></table>
 
 <p>The result is that</p>
-<div class="math">$$ \theta = \left( \begin{matrix} 
-8.9598 \\
-0.0139 \\
+<p>$$ \theta = \left( \begin{matrix} 
+8.9598 \
+0.0139 \
 -0.8738 \end{matrix} \right)
-$$</div>
-<p>However, the main disadvantage of the method is that <span class="math">\(X^T X\)</span> is a n x n matrix. When n is very large, it is very complicated to calculate <span class="math">\((X^T X)^{-1}\)</span>. The time complexity is often <span class="math">\(O(n^3)\)</span>, which is less efficient.</p>
+$$</p>
+<p>However, the main disadvantage of the method is that $X^T X$ is a n x n matrix. When n is very large, it is very complicated to calculate $(X^T X)^{-1}$. The time complexity is often $O(n^3)$, which is less efficient.</p>
 <h1>Gradient Descent Algorithm</h1>
 <p>To slove the problem, there is a machine learning algorithm named gradient discent algorithm. The mathematical base can be seen as follows.
 For any j,</p>
-<div class="math">$$\theta_j := \theta_j - \alpha \frac{\partial}{\partial \theta_j}J(\theta)$$</div>
-<p>Solving the partial derivative, we have for all <span class="math">\(\theta_j\)</span></p>
-<div class="math">$$\theta_j = \theta_j - \alpha \frac{1}{m} \sum_{i=1}^m\big((h_\theta(x^{(i)})-y^{(i)} )x^{(i)}\big)$$</div>
+<p>$$\theta_j := \theta_j - \alpha \frac{\partial}{\partial \theta_j}J(\theta)$$</p>
+<p>Solving the partial derivative, we have for all $\theta_j$</p>
+<p>$$\theta_j = \theta_j - \alpha \frac{1}{m} \sum_{i=1}^m\big((h_\theta(x^{(i)})-y^{(i)} )x^{(i)}\big)$$</p>
 <p>And the calculation will continue until convergence. It is also easy to code by Matlab.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -220,66 +220,9 @@ For any j,</p>
 </pre></div>
 </td></tr></table>
 
-<p>You should check manually if the iteration takes effect. I do not use "while" in this case because the loop will be endless if <span class="math">\(\alpha\)</span> is not set properly.</p>
+<p>You should check manually if the iteration takes effect. I do not use "while" in this case because the loop will be endless if $\alpha$ is not set properly.</p>
 <h1>Brief Conclusion</h1>
 <p>Multivariate linear regression can fit continuous data with certain form by computing parameters. It is also possible to fit polynomial function by considering high-order term as another feature.</p>
-<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
-    var align = "center",
-        indent = "0em",
-        linebreak = "false";
-
-    if (false) {
-        align = (screen.width < 768) ? "left" : align;
-        indent = (screen.width < 768) ? "0em" : indent;
-        linebreak = (screen.width < 768) ? 'true' : linebreak;
-    }
-
-    var mathjaxscript = document.createElement('script');
-    var location_protocol = (false) ? 'https' : document.location.protocol;
-    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
-    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
-    mathjaxscript.type = 'text/javascript';
-    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
-    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
-        "MathJax.Hub.Config({" +
-        "    config: ['MMLorHTML.js']," +
-        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
-        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
-        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: '"+ align +"'," +
-        "    displayIndent: '"+ indent +"'," +
-        "    showMathMenu: true," +
-        "    messageStyle: 'normal'," +
-        "    tex2jax: { " +
-        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
-        "        displayMath: [ ['$$','$$'] ]," +
-        "        processEscapes: true," +
-        "        preview: 'TeX'," +
-        "    }, " +
-        "    'HTML-CSS': { " +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
-        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
-        "    }, " +
-        "}); " +
-        "if ('default' !== 'default') {" +
-            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
-                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
-                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
-                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
-                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
-                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
-            "});" +
-        "}";
-    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
-}
-</script>
             
             <section>
 <div class="accordion" id="accordion2">
