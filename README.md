@@ -4,11 +4,13 @@ This is [@JasonQSY](http://blog.jasonqian.me/)'s blog.
 
 ## Installation
 
-TODO
+We solve dependencies with `pip`.
 
 ```
-pip3 install pelican
-pip3 install beautifulsoup4
+pip install pelican
+pip install Markdown
+pip install typogrify
+pip install beautifulsoup4
 ```
 
 ## Usage
@@ -17,7 +19,10 @@ Write `*.md` in `/content`. In order to preview,
 
 ```
 make html
+make serve
 ```
+
+> Maybe some problem now, TODO
 
 In order to publish
 

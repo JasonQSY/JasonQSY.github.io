@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'Jason Qian'
-SITENAME = 'JasonQian'
-SITEURL = 'localhost:8000'
+AUTHOR = 'JasonQSY'
+SITENAME = 'JasonQSY\'s Blog'
+SITEURL = 'localhost:8080'
 TIMEZONE = 'Asia/Shanghai'
 
 PATH = 'content'
