@@ -2,6 +2,8 @@ Title: About me
 Date: 2016-2-10
 Modified: 2016-11-19
 
+Some information here may be out-dated. See also my new cv <http://blog.jasonqian.me/cv.html>.
+
 ## Profile
 
 My name is Qian Shengyi (JasonQSY), a sophomore student in Univerisity of Michigan - Shanghai Jiao Tong Univerisity Joint Intitute (UM-SJTU JI). My major is Electronic and Computer Engineering (ECE). There are several courses I take
