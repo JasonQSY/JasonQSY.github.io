@@ -4,6 +4,8 @@ This is [@JasonQSY](http://blog.jasonqian.me/)'s blog.
 
 ## Installation
 
+### By `pip`
+
 We solve dependencies with `pip`.
 
 ```
@@ -11,6 +13,17 @@ pip install pelican
 pip install Markdown
 pip install typogrify
 pip install beautifulsoup4
+```
+
+### By `pyenv`
+
+In this way, we need `pyenv` and `pyenv-virtualenv`.
+
+```
+pyenv install 3.6.0
+pyenv virtualenv 3.6.0 blog
+pyenv global blog
+pip install pelican Markdown typogrify beautifulsoup4
 ```
 
 ## Usage
