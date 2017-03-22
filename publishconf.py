@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'JasonQSY'
 SITENAME = 'JasonQSY\'s Blog'
-SITEURL = 'https://jasonqsy.github.io/blog'
+SITEURL = 'http://www-personal.umich.edu/~syqian'
 TIMEZONE = 'Asia/Shanghai'
 
 PATH = 'content'
