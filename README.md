@@ -1,6 +1,6 @@
-# jasonqsy-blog
+# JasonQSY.github.io
 
-This is [@JasonQSY](http://blog.jasonqian.me/)'s blog.
+This is [@JasonQSY](https://jasonqsy.github.io)'s blog.
 
 ## Installation
 
@@ -13,6 +13,7 @@ pip install pelican
 pip install Markdown
 pip install typogrify
 pip install beautifulsoup4
+pip install ghp-import2
 ```
 
 ### By `pyenv`
@@ -23,27 +24,25 @@ In this way, we need `pyenv` and `pyenv-virtualenv`.
 pyenv install 3.6.0
 pyenv virtualenv 3.6.0 blog
 pyenv global blog
-pip install pelican Markdown typogrify beautifulsoup4
+pip install pelican Markdown typogrify beautifulsoup4 ghp-import2
 ```
 
 ## Usage
 
-Write `*.md` in `/content`. In order to preview,
+The main branch is the `develop` branch. Write `*.md` in `/content` of develop branch. In order to preview,
 
 ```
 make html
 make serve
 ```
 
-> Maybe some problem now, TODO
-
 In order to publish
 
 ```
-make publish
+make github
 ```
 
-and push to this repo.
+and contents will automatically push to the master branch.
 
 ## Reference
 

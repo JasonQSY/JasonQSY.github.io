@@ -14,5 +14,5 @@ My main experience focuses on web development and machine learning. I'm interest
 - Email: jasonsyqian@gmail.com
 - Github: <https://github.com/JasonQSY>
 - Linkedin: <https://linkedin.com/in/jasonqsy>
-- CV: <http://umich.edu/~syqian>
+- CV: <https://jasonqsy.github.io/cv.html>
  
