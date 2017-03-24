@@ -1,5 +1,5 @@
 Title: The Installation of Shadowsocks on Ubuntu Server
-Category: Unix/Linux
+Category: Misc
 Date: 2016-2-10
 Modified: 2016-2-10
 Tags: Ubuntu Server

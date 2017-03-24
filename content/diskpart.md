@@ -1,5 +1,5 @@
 Title: Convert MBR to GPT Without a OS
-Category: Windows
+Category: Misc
 Date: 2016-5-3
 
 
