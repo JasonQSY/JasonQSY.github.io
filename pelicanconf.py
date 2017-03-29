@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'JasonQSY'
-SITENAME = 'JasonQSY\'s Blog'
+AUTHOR = 'Shengyi Qian'
+SITENAME = 'Shengyi Qian'
 SITEURL = 'http://localhost:8080'
 TIMEZONE = 'Asia/Shanghai'
 
@@ -32,8 +32,9 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('email', 'mailto:syqian@sjtu.edu.cn'),
-          ('github', 'http://github.com/JasonQSY'),
+SOCIAL = (('email', 'mailto:jasonsyqian@gmail.com'),
+          ('github', 'https://github.com/JasonQSY'),
+          ('linkedin', 'https://linkedin.com/in/jasonqsy'),
           ('Another social link', '#'),)
 
 DEFAULT_PAGINATION = False
