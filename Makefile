@@ -26,6 +26,7 @@ CLOUDFILES_CONTAINER=my_cloudfiles_container
 
 DROPBOX_DIR=~/Dropbox/Public/
 
+GITHUB_DEV_BRANCH=develop
 GITHUB_PAGES_BRANCH=master
 
 DEBUG ?= 0
@@ -58,6 +59,7 @@ help:
 	@echo '   make ftp_upload                     upload the web site via FTP        '
 	@echo '   make s3_upload                      upload the web site via S3         '
 	@echo '   make cf_upload                      upload the web site via Cloud Files'
+	@echo '   make commit                         upload the web site to Github repo '
 	@echo '   make github                         upload the web site via gh-pages   '
 	@echo '                                                                          '
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html   '
@@ -119,6 +121,11 @@ s3_upload: publish
 
 cf_upload: publish
 	cd $(OUTPUTDIR) && swift -v -A https://auth.api.rackspacecloud.com/v1.0 -U $(CLOUDFILES_USERNAME) -K $(CLOUDFILES_API_KEY) upload -c $(CLOUDFILES_CONTAINER) .
+
+commit:
+	git add .
+	git commit -m "update website"
+	git push origin $(GITHUB_DEV_BRANCH)
 
 github: publish
 	ghp-import -m "Generate Pelican site" -b $(GITHUB_PAGES_BRANCH) $(PUBLISHDIR)
