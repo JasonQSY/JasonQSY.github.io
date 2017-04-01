@@ -13,6 +13,9 @@ DEFAULT_LANG = 'en'
 
 THEME = "themes/pelican-elegant"
 
+SITE_DESCRIPTION = """I'm a undergraduate student in the University of Michigan
+                      and major in Computer Science."""
+
 # Plugins
 PLUGIN_PATHS = ["plugins"]
 
