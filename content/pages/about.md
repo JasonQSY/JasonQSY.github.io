@@ -1,13 +1,14 @@
 Title: About me
 Date: 2016-2-10
-Modified: 2017-3-18
+Modified: 2017-8-31
 
 ## Profile
 
-My name is Qian Shengyi (JasonQSY), a sophomore student in Univerisity of Michigan - Shanghai Jiao Tong Univerisity Joint Intitute (UM-SJTU JI). My major is Electronic and Computer Engineering (ECE). I'm currenrlt enrolled in Univerisity of Michigan and I'll pursue Computer Science (CS) degree in UM. 
+I'm Shengyi Qian (alias @JasonQSY), a junior student of University of Michigan (UMich). I'm pursing a Computer Science (CS) degree and also interested in specific Mathematics topics.
 
-My main experience focuses on web development and machine learning. I'm interested in reinforcement learning, computer vision, deep learning and distributed systems.
+My main experience focuses on web development and machine learning. For CS, I'm interested in reinforcement learning, computer vision, deep learning and distributed systems. And for Mathematics, I'm mostly interested in algebra and its application on Computer Science, especially.
 
+For more information, please have a look at my CV.
 
 ## Contact
 

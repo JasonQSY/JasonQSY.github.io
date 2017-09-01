@@ -8,7 +8,7 @@ This is [@JasonQSY](https://jasonqsy.github.io)'s blog.
 
 We solve dependencies with `pip`.
 
-```
+```bash
 pip install pelican
 pip install Markdown
 pip install typogrify
@@ -20,7 +20,7 @@ pip install ghp-import2
 
 In this way, we need `pyenv` and `pyenv-virtualenv`.
 
-```
+```bash
 pyenv install 3.6.0
 pyenv virtualenv 3.6.0 blog
 pyenv global blog
@@ -31,22 +31,26 @@ pip install pelican Markdown typogrify beautifulsoup4 ghp-import2
 
 The main branch is the `develop` branch. Write `*.md` in `/content` of develop branch. In order to preview,
 
-```
+```bash
 make html
 make serve
 ```
 
 In order to publish
 
-```
+```bash
 make github
 ```
 
-and contents will automatically push to the master branch.
+and contents will automatically push to the `master` branch. Meanwhile, you may also want to commit the latest change to the `develop` branch if the website seems okay. To achieve this, type
+
+```bash
+make commit
+```
 
 ## Reference
 
-Note that I may make several changes on them.
+The website is powered by Pelican including its theme `elegant` and the plugin `render_math`. Note that their code in this repo may not be corresponding to the original one since I make some changes to fit my blog better.
 
 - [Pelican](https://github.com/getpelican/pelican) the framework of static blog.
 - [render_math](https://github.com/barrysteyn/pelican_plugin-render_math) enable mathjax support.
