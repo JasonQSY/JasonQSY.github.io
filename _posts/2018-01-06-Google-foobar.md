@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Experience of Google foobar"
-date:   2018-01-19 18:48:06 -0500
-categories: jekyll update
+date:   2018-01-06
+categories: algorithm
 ---
 
 Google foobar is an interesting challenge. Invited by my friend, I spent some time to completeit. There are actually some interesting ideas which can be talked about.
