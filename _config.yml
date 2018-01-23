@@ -24,7 +24,7 @@ plugins:
 
 global_css: '/static/website.css'
 avatar: '/static/avatar.jpg'
-cv: '/resourses/cv.html'
+cv: '/resources/cv.html'
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
