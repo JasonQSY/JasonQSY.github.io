@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JasonQSY's CV</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: Fontin;
+            src: local('Fontin SmallCaps'), url('fonts/Fontin-SmallCaps.ttf');
+        }
+
+        body {
+            text-align: center;
+            font-family: "Times New Roman", Arial, sans-serif;
+            font-size: 16px;
+            background-color: #eeeeee;
+        }
+        .cv-wrapper {
+            background-color: #ffffff;
+            box-shadow: 5px 5px 5px #9e9e9e;
+            border: 1px solid #cecece;
+            width: 1000px;
+            margin-top: 25px;
+            margin-bottom: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 100px;
+            padding-right: 100px;
+            line-height: 1.5;
+        }
+        .title {
+            margin-bottom: 20px;
+        }
+        .title > h1 {
+            font-family: Fontin, "Times New Roman", Arial, sans-serif;
+        }
+        .contacts-wrapper > i {
+            font-size: 5px;
+        }
+        .contacts-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section > .section-title {
+            font-family: Fontin, "Times New Roman", Arial, sans-serif;
+            text-align: left;
+            font-size: 20px;
+            border-bottom: 1px dashed black;
+        }
+        .section-item {
+            margin-top: 10px;
+            text-align: left;
+        }
+        .section-item p {
+            margin-bottom: 0;
+        }
+        .section-item ul {
+            padding-left: 25px;
+        }
+        .school-right {
+            float: right;
+        }
+     .course-split {
+         display: flex;
+         justify-content: space-between;
+     }
+
+     .course-left {
+         width: 50%;
+     }
+     .course-right {
+         width: 50%;
+         }
+	    @media print {
+	        .page-break {
+		        page-break-before: always;
+                margin-top: 60px;
+	        }
+	        .cv-wrapper {
+		        border: none;
+	        }
+            a[href]:after {
+                content: none !important;
+            }
+	    }
+    </style>
+</head>
+<body>
+    <div class="cv-wrapper">
+    <div class="title">
+        <h1>Shengyi Qian</h1>
+        <div class="contacts-wrapper">
+            <span class="email">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <a href="mailto:syqian@umich.edu">syqian@umich.edu</a>
+            </span>
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <span class="location">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                Ann Arbor, MI
+            </span>
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <span class="website">
+                <i class="fa fa-link" aria-hidden="true"></i>
+                <a href="https://jasonqsy.github.io">https://jasonqsy.github.io</a>
+            </span>
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-title">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+            <span>Education</span>
+        </div>
+        <div class="section-item">
+            <div class="school">
+                <span class="school-left"><strong>University of Michigan - Ann Arbor (UMich)</strong>, MI, U.S.</span>
+                <span class="school-right">2017 - Present</span>
+            </div>
+            <div class="school-details">
+                <p><em>B.S.E.</em> in Computer Science (CS), College of Engineering. GPA: 4.00/4.00.</p>
+            </div>
+        </div>
+        <div class="section-item">
+            <div class="school">
+                <span class="school-left"><strong>Shanghai Jiao Tong University (SJTU)</strong>, Shanghai, China.</span>
+                <span class="school-right">2015 - 2017</span>
+            </div>
+            <div class="school-details">
+                <p><em>B.S.</em> in Electrical and Computer Engineering (ECE), UM-SJTU Joint Institute. GPA: 3.65/4.00.</p>
+            </div>
+        </div>
+        <!--
+        <div class="section-item">
+            <div class="school">
+                <span class="school-left"><strong>Nanyang Model High School</strong>, Shanghai, China.</span>
+                <span class="school-right">2012 - 2015</span>
+            </div>
+        </div>
+        -->
+    </div>
+    <div class="section">
+        <div class="section-title">
+            <i class="fa fa-cogs" aria-hidden="true"></i>
+            <span>Summary of Skills</span>
+        </div>
+        <div class="section-item">
+            <ul>
+                <li>Research experience in Computer Vision and Data Mining.</li>
+                <li>Skilled in programming including system (C/C++/Go) and web (python, PHP, javascript, etc.) development.</li>
+                <li>Solid foundation in Computer Science. Familiar with operating systems and computer network.</li>
+                <li>Additional background in Mathematics. Having taken Honors Analysis, Numerical Methods, Complex Analysis, <a href="http://umji.sjtu.edu.cn/~horst/teaching/ve401.html">Probabilitic Methods</a>, Cryptography, etc.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-title">
+            <i class="fa fa-flask" aria-hidden="true"></i>
+            <span>Experience</span>
+        </div>
+        <div class="section-item">
+            <div class="school">
+                <span class="school-left"><strong>Vision and Learning Lab, UMich.</strong></span>
+                <span class="school-right">Oct. 2017 - Present</span>
+            </div>
+            <div class="school-details">
+                <p><em>Undergraduate research assistant.</em></p>
+                <p>I'm doing CV and Robotics project currently.</p>
+            </div>
+        </div>
+        <div class="section-item">
+            <div class="school">
+                <span class="school-left"><strong>Data Mining Group, Wireless and Networking Lab, SJTU.</strong></span>
+                <span class="school-right">Dec. 2016 - Aug. 2017</span>
+            </div>
+            <div class="school-details">
+                <p><em>Undergraduate research assistant.</em> See also <a href="http://wanglab.sjtu.edu.cn/ShowPeople.aspx?info_lb=534&flag=103&info_id=1465">people in wang's lab</a>.</p>
+                <p>My work includes</p>
+                <ul>
+                    <li>Implement machine learning algorithms based on tensorflow. Focus on reinforcement learning such as deep Q-learning.</li>
+                    <li>Deploy distributed tensorflow to run machine learning algorithms on multiple GPUs belonging to several computers.</li>
+                    <li>Apply our platform in real projects with world-famous companies like Huawei.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section-item">
+            <div class="school">
+                <span class="school-left"><strong>Dongyue Web Studio.</strong></span>
+                <span class="school-right">Apr. 2016 - Aug. 2017</span>
+            </div>
+            <div class="school-details">
+                <p><em>Developer.</em> Web full-stack engineer.</p>
+                <p><a href="https://github.com/dyweb">Dongyue Web Studio</a> is one of the top communities for geeks in SJTU. My work includes</p>
+                <ul>
+                    <li>Developer and maintainer of Tongqu (<a href="https://tongqu.me">https://tongqu.me</a>), the biggest website of students' activities in SJTU. The main chanllenge is handling high concurrency with limited hardware using Redis.</li>
+                    <li>Developer of SJTU military training website for 2015 class (<a href="http://junxun.sjtu.edu.cn">http://junxun.sjtu.edu.cn</a>).</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-title">
+            <i class="fa fa-book" aria-hidden="true"></i>
+            <span>Selected Courses</span>
+        </div>
+        <div class="section-item course-split">
+            <div class="course-left">
+                <p>EECS281  Data Structure and Algorithms.</p>
+                <p>EECS370  Introduction to Computer Organization.</p>
+                <p>MATH371 Introduction to Numerical Methods.</p>
+            </div>
+            <div class="course-right">
+                <ul>
+                    <p>VE475 Introduction to Cryptography (in SJTU).</p>
+                    <p>EECS445 Introduction to Machine Learning (ongoing).</p>
+                    <p>EECS482 Introduction to Operating Systems (ongoing).</p>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-title">
+            <i class="fa fa-code-fork" aria-hidden="true"></i>
+            <span>Selected Projects</span>
+        </div>
+        <div class="section-item">
+            <div class="school">
+                <span class="school-left"><strong>Robocup Small Size Soccer League.</strong></span>
+                <span class="school-right">July 2017</span>
+            </div>
+            <div class="school-details">
+                <p><em>Team member.</em> Responsible for programming related to high-level control.</p>
+                <p>RoboCup is an annual international robotics competition, and the competition is between two groups whose robots play soccer. The key feature is that group member cannot control robots manually and the competition is completely automatic. Our team SRC won the <em>world championship</em> in 2017.</p>
+            </div>
+        </div>
+        <div class="section-item">
+            <div class="school">
+                <span class="school-left"><strong>Mathematical Contest in Modeling (2017).</strong></span>
+                <span class="school-right">Jan. 2017</span>
+            </div>
+            <div class="school-details">
+                <p><em>Team leader.</em> Responsible for modeling.</p>
+                <p>Our objective is to analysis the effect of allowing self-driving cars in the courtry on the traffic of the whole city. Given few data, we use Gravity Potential Model to generalize the traffic flow and then apply Flow Network Model to assess the effect quantatively. In the generalization, we use cross-validation method and gradient descent optimization. Finally, we got Honorable Mention.</p>
+            </div>
+        </div>
+        <div class="section-item">
+            <div class="school">
+                <span class="school-left"><strong>HackxFDU.</strong></span>
+                <span class="school-right">Nov. 2016</span>
+            </div>
+            <div class="school-details">
+                <p><em>Team member.</em> Responsible for programming.</p>
+                <p>This is one of the top hackathons in China and it's held in Fudan University. We implement a product to record the distribution and real-time emotion of people in a venue. We use Microsoft Cognitive Service for face identification and get Microsoft's reward finally. See also <a href="https://github.com/Chuibility/venue_statics_system">https://github.com/Chuibility/venue_statics_system</a></p>
+            </div>
+        </div>
+    </div>
+    <!--
+    <div class="section page-break">
+        <div class="section-title">
+            <i class="fa fa-users" aria-hidden="true"></i>
+            <span>Community and Associations</span>
+        </div>
+        <div class="section-item">
+            <div class="school">
+                <span class="school-left"><strong>UM-SJTU JI Student Union</strong></span>
+                <span class="school-right">Oct. 2015 - July 2017</span>
+            </div>
+            <div class="school-details">
+                <p><em>Vice-director of Career Department.</em></p>
+                <p>The iCareer department's work includes organizing visits to several kinds of companies, compose career manual for JI students, etc.</p>
+            </div>
+        </div>
+        <div class="section-item">
+            <div class="school">
+                <span class="school-left"><strong>Students' Science and Technology Innovation Association (SSTIA).</strong></span>
+                <span class="school-right">Oct. 2015 - July 2017</span>
+            </div>
+            <div class="school-details">
+                <p><em>Vice-director of Project Deparment.</em> <a href="https://github.com/SSTIA">SSTIA</a> in UM-SJTU JI.</p>
+                <p>I hold technical salon for freshmen and introduced web development and arduino programming.</p>
+            </div>
+        </div>
+    </div>
+    -->
+    <div class="section">
+        <div class="section-title">
+            <i class="fa fa-trophy" aria-hidden="true"></i>
+            <span>Honors and Awards</span>
+        </div>
+        <div class="section-item">
+            <ul>
+                <li>Dean's List in the Summer Semester of the 2016-2017 academic year (Term GPA 3.85/4.00).<span class="school-right">Oct. 2017</span></li>
+                <li>Honorable Mention of Mathematical Contest on Modeling (MCM) 2017.<span class="school-right">Apr. 2017</span></li>
+                <!--<li>Acc. Competitor of University Physics Contest 2016.<span class="school-right">Feb. 2017</span></li>-->
+                <li><a href="http://www.junyuan.org/Default.aspx?tabid=27917">Undergraduate Junyuan Scholarship</a>.<span class="school-right">Nov. 2016</span></li>
+                <li>Undergraduate Excellent Scholarship.<span class="school-right">Nov. 2016</span></li>
+                <li>Distinguished Achievement In Extracurricular Activity of JI Award.<span class="school-right">Oct. 2016</span></li>
+                <li>Dean's List in the Summer Semester of the 2015-2016 academic year (Term GPA 3.83/4.00).<span class="school-right">Oct. 2016</span></li>
+                <li>Dean's List in the Fall Semester of the 2015-2016 academic year (Term GPA 3.80/4.00).<span class="school-right">Feb. 2016</span></li>
+            </ul>
+        </div>
+    </div>
+    <!--
+    <div class="section">
+        <div class="section-title">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <span>Test Scores</span>
+        </div>
+        <div class="section-item">
+            <ul>
+                <li>GRE: Verbal Analysis 150 + Quantitative Analysis 168 + Analytical Writing 4.0.<span class="school-right">May 2017</span></li>
+                <li>TOEFL: Reading 26 + Listening 24 + Speaking 22 + Writing 24 = 96.<span class="school-right">May 2016</span></li>
+                <li>CET6: Listening 181 + Reading 187 + Writing 147 = 515.<span class="school-right">Dec. 2016</span></li>
+                <li>CET4: Listening 227 + Reading 198 + Writing 169 = 594.<span class="school-right">June 2016</span></li>
+            </ul>
+        </div>
+    </div>-->
+    <div class="section">
+        <div class="section-title">
+            <i class="fa fa-info-circle" aria-hidden="true"></i>
+            <!--<i class="fa fa-language" aria-hidden="true"></i>-->
+            <span>Miscellaneous</span>
+        </div>
+        <div class="section-item">
+            <ul>
+                <li>Blog: <a href="https://jasonqsy.github.io">https://jasonqsy.github.io</a></li>
+                <li>LinkedIn: <a href="http://linkedin.com/in/jasonqsy">http://linkedin.com/in/jasonqsy</a></li>
+                <li>GitHub: <a href="https://github.com/JasonQSY">https://github.com/JasonQSY</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
