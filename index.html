@@ -8,7 +8,7 @@ layout: page
 
 <div class="row">
     <div class="homepage-img">
-        <img src="{{ site.avatar }}" width="150px">
+        <img src="{{ site.avatar }}" width="300px">
     </div>
     <div class="homepage-name">
       <p>I'm Shengyi Qian, a junior student of University of Michigan (UMich). I'm pursing a Computer Science (CS) degree and interested in the research of computer vision and machine learning.</p>
@@ -17,19 +17,20 @@ layout: page
         <a href="https://github.com/JasonQSY">Github</a>.
         <a href="https://www.linkedin.com/in/jasonqsy/">Linkedin</a>.
         <a href="{{ site.cv }}">CV</a>.
+      </div>
     </div>
-    </div>
-  </div>
-  <div class="row" id="homepage-row2">
-    <div class="recent-posts">
-      <h1 class="page-heading">Recent Posts</h1>
-      <ul>
+</div>
+<div class="row" id="homepage-row2">
+  <div class="recent-posts">
+    <h1 class="page-heading">Recent Posts</h1>
+    <ul>
       {% for post in site.posts limit: 5 %}
         <li>
             <a class="post-link homepage-post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </li>
       {% endfor %}
-    </div>
+    </ul>
+  </div>
     <div class="location">
       <h1 class="page-heading">Location</h1>
       <div id="map" style="height: 250px; width: 100%;"></div>

@@ -42,6 +42,10 @@
     font-size: 18px !important;
 }
 
+.homepage-img {
+    margin-right: 50px;
+}
+
 #homepage-row2 {
     align-items: flex-start;
 }
