@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/jasonqsy
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jasonqsy.github.io
+  * I am jasonqsy (https://keybase.io/jasonqsy) on keybase.
+  * I have a public key ASDiHADrWCelaltRV66HfEtCnIAY_rM-QAs4s8w6s21OKQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01209d9952e07dfa1619d6d09ed5b337a089ec9478ed8ce3c50e0ef3af5d5d7b71150a",
+      "host": "keybase.io",
+      "kid": "0120e21c00eb5827a56a5b5157ae877c4b429c8018feb33e400b38b3cc3ab36d4e290a",
+      "uid": "87137dacb082723d27fa40be09be1519",
+      "username": "jasonqsy"
+    },
+    "merkle_root": {
+      "ctime": 1520026770,
+      "hash": "f0c9885f59ede29b7c52461bc64c8e78fedc86d1cf498ac339bc3349ead8c99607a29ed67e3524d179b9a8ae6fdeb7c77dbb8fbdb353c32770488682437fe6fe",
+      "hash_meta": "60eae7cf2e839248060ecf7bdc008c812e268723dc2388e82899df1f2130c96d",
+      "seqno": 2177866
+    },
+    "service": {
+      "hostname": "jasonqsy.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.44"
+  },
+  "ctime": 1520026877,
+  "expire_in": 504576000,
+  "prev": "8ee545cbb7c2f820530cbd99eed78f715907b1f75b12bd06bc8dc9e0504cd420",
+  "seqno": 15,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg4hwA61gnpWpbUVeuh3xLQpyAGP6zPkALOLPMOrNtTikKp3BheWxvYWTFA0t7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwOWQ5OTUyZTA3ZGZhMTYxOWQ2ZDA5ZWQ1YjMzN2EwODllYzk0NzhlZDhjZTNjNTBlMGVmM2FmNWQ1ZDdiNzExNTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZTIxYzAwZWI1ODI3YTU2YTViNTE1N2FlODc3YzRiNDI5YzgwMThmZWIzM2U0MDBiMzhiM2NjM2FiMzZkNGUyOTBhIiwidWlkIjoiODcxMzdkYWNiMDgyNzIzZDI3ZmE0MGJlMDliZTE1MTkiLCJ1c2VybmFtZSI6Imphc29ucXN5In0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTIwMDI2NzcwLCJoYXNoIjoiZjBjOTg4NWY1OWVkZTI5YjdjNTI0NjFiYzY0YzhlNzhmZWRjODZkMWNmNDk4YWMzMzliYzMzNDllYWQ4Yzk5NjA3YTI5ZWQ2N2UzNTI0ZDE3OWI5YThhZTZmZGViN2M3N2RiYjhmYmRiMzUzYzMyNzcwNDg4NjgyNDM3ZmU2ZmUiLCJoYXNoX21ldGEiOiI2MGVhZTdjZjJlODM5MjQ4MDYwZWNmN2JkYzAwOGM4MTJlMjY4NzIzZGMyMzg4ZTgyODk5ZGYxZjIxMzBjOTZkIiwic2Vxbm8iOjIxNzc4NjZ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiamFzb25xc3kuZ2l0aHViLmlvIiwicHJvdG9jb2wiOiJodHRwczoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuNDQifSwiY3RpbWUiOjE1MjAwMjY4NzcsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJwcmV2IjoiOGVlNTQ1Y2JiN2MyZjgyMDUzMGNiZDk5ZWVkNzhmNzE1OTA3YjFmNzViMTJiZDA2YmM4ZGM5ZTA1MDRjZDQyMCIsInNlcW5vIjoxNSwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEAfTNBT21LrJxlrXTlcfO4nMS6e6igTaP0KDt2bqaglX/hl0Z4aNw8Pc37GZHOXyryMZtX8cYR+VbADEPEDK1sOqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgNNTosRuvWyOpTxRvhMC/T8aYRCYt5ZcuG5mLZXevO/KjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jasonqsy
+
+==================================================================
