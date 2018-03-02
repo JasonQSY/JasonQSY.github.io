@@ -3,6 +3,7 @@ layout: post
 title:  "Compile Tensorflow with GPU Support on Fedora"
 date:   2017-03-24
 categories: misc
+comments: true
 ---
 
 Since sometimes the training with CPU is low, I try to compile a tensorflow with gpu support. And I install it on a desktop and open `openssh-server` since my laptop does not have Nvidia GPU.
