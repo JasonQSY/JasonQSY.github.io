@@ -143,7 +143,7 @@
         </div>
         -->
     </div>
-    <div class="section">
+    <!--<div class="section">
         <div class="section-title">
             <i class="fa fa-cogs" aria-hidden="true"></i>
             <span>Summary of Skills</span>
@@ -156,7 +156,7 @@
                 <li>Additional background in Mathematics. Having taken Honors Analysis, Numerical Methods, Complex Analysis, <a href="http://umji.sjtu.edu.cn/~horst/teaching/ve401.html">Probabilitic Methods</a>, Cryptography, etc.</li>
             </ul>
         </div>
-    </div>
+    </div>-->
     <div class="section">
         <div class="section-title">
             <i class="fa fa-flask" aria-hidden="true"></i>
@@ -164,12 +164,15 @@
         </div>
         <div class="section-item">
             <div class="school">
-                <span class="school-left"><strong>Vision and Learning Lab, UMich.</strong></span>
+                <span class="school-left"><strong>Vision & Learning Lab, UMich.</strong></span>
                 <span class="school-right">Oct. 2017 - Present</span>
             </div>
             <div class="school-details">
-                <p><em>Undergraduate research assistant.</em></p>
-                <p>I'm doing CV and Robotics project currently.</p>
+                <p><em>Undergraduate research assistant.</em> Advised by Prof. Jia Deng.</p>
+                <ul>
+                    <li>Focusing on semantic instance segmentation.</li>
+                    <li>Deploy <a href="https://github.com/umich-vl/pose-ae-demo">pose estimation algorithm</a> on robot powered by ROS.</li>
+                </ul>
             </div>
         </div>
         <div class="section-item">
@@ -179,11 +182,9 @@
             </div>
             <div class="school-details">
                 <p><em>Undergraduate research assistant.</em> See also <a href="http://wanglab.sjtu.edu.cn/ShowPeople.aspx?info_lb=534&flag=103&info_id=1465">people in wang's lab</a>.</p>
-                <p>My work includes</p>
                 <ul>
                     <li>Implement machine learning algorithms based on tensorflow. Focus on reinforcement learning such as deep Q-learning.</li>
-                    <li>Deploy distributed tensorflow to run machine learning algorithms on multiple GPUs belonging to several computers.</li>
-                    <li>Apply our platform in real projects with world-famous companies like Huawei.</li>
+                    <li>Deploy a distributed machine learning cluster based on tensorflow with multiple GPUs belonging to several computers. Powered by the platform, we process massive data and work on real projects with Huawei.</li>
                 </ul>
             </div>
         </div>
@@ -194,15 +195,14 @@
             </div>
             <div class="school-details">
                 <p><em>Developer.</em> Web full-stack engineer.</p>
-                <p><a href="https://github.com/dyweb">Dongyue Web Studio</a> is one of the top communities for geeks in SJTU. My work includes</p>
                 <ul>
-                    <li>Developer and maintainer of Tongqu (<a href="https://tongqu.me">https://tongqu.me</a>), the biggest website of students' activities in SJTU. The main chanllenge is handling high concurrency with limited hardware using Redis.</li>
+                    <li>Developer and maintainer of Tongqu (<a href="https://tongqu.me">https://tongqu.me</a>), the largest website of students' activities in SJTU. The main chanllenge is handling high concurrency with limited hardware using Redis.</li>
                     <li>Developer of SJTU military training website for 2015 class (<a href="http://junxun.sjtu.edu.cn">http://junxun.sjtu.edu.cn</a>).</li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="section">
+    <!--<div class="section">
         <div class="section-title">
             <i class="fa fa-book" aria-hidden="true"></i>
             <span>Selected Courses</span>
@@ -221,11 +221,31 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div>-->
     <div class="section">
         <div class="section-title">
             <i class="fa fa-code-fork" aria-hidden="true"></i>
             <span>Selected Projects</span>
+        </div>
+        <div class="section-item">
+            <div class="school">
+                <span class="school-left"><strong>Single-view Surface Normal Prediction.</strong></span>
+                <span class="school-right">Apr. 2018</span>
+            </div>
+            <div class="school-details">
+                <p><em>Team leader.</em> Responsible for designing the model.</p>
+                <p>This is the course project for EECS442 Computer Vision, 2018 Winter. We use stacked hourglass ConvNet to predict the surface normal from a single image. Our final result broke the record last year.</p>
+            </div>
+        </div>
+        <div class="section-item">
+            <div class="school">
+                <span class="school-left"><strong>Learning to Actively Learn: A Reinforcement Learning Approach to Active Learning.</strong></span>
+                <span class="school-right">Sep. 2017 - </span>
+            </div>
+            <div class="school-details">
+                <p><em>Contributor.</em> Mentored by <a href="http://www-personal.umich.edu/~raywang/">Yue Wang</a>.</p>
+                <p>This is the ongoing research project. We are trying to apply a Reinforcement Learning Approach to Active Learning.</p>
+            </div>
         </div>
         <div class="section-item">
             <div class="school">
@@ -247,7 +267,7 @@
                 <p>Our objective is to analysis the effect of allowing self-driving cars in the courtry on the traffic of the whole city. Given few data, we use Gravity Potential Model to generalize the traffic flow and then apply Flow Network Model to assess the effect quantatively. In the generalization, we use cross-validation method and gradient descent optimization. Finally, we got Honorable Mention.</p>
             </div>
         </div>
-        <div class="section-item">
+        <div class="section-item page-break">
             <div class="school">
                 <span class="school-left"><strong>HackxFDU.</strong></span>
                 <span class="school-right">Nov. 2016</span>
@@ -293,14 +313,13 @@
         </div>
         <div class="section-item">
             <ul>
-                <li>Dean's List in the Summer Semester of the 2016-2017 academic year (Term GPA 3.85/4.00).<span class="school-right">Oct. 2017</span></li>
-                <li>Honorable Mention of Mathematical Contest on Modeling (MCM) 2017.<span class="school-right">Apr. 2017</span></li>
-                <!--<li>Acc. Competitor of University Physics Contest 2016.<span class="school-right">Feb. 2017</span></li>-->
-                <li><a href="http://www.junyuan.org/Default.aspx?tabid=27917">Undergraduate Junyuan Scholarship</a>.<span class="school-right">Nov. 2016</span></li>
+                <li><a href="https://www.eecs.umich.edu/eecs/students/awards/undergraduate/17-18awards.html">EECS Scholar Award.</a><span class="school-right">Feb. 2018</span></li>
+                <li>Dean's List in the Summer Semester of the 2016-2017 academic year.<span class="school-right">Oct. 2017</span></li>
+                <li><a href="http://news.sjtu.edu.cn/info/1002/1386973.htm">Undergraduate Junyuan Scholarship</a>.<span class="school-right">May 2017</span></li>
                 <li>Undergraduate Excellent Scholarship.<span class="school-right">Nov. 2016</span></li>
                 <li>Distinguished Achievement In Extracurricular Activity of JI Award.<span class="school-right">Oct. 2016</span></li>
-                <li>Dean's List in the Summer Semester of the 2015-2016 academic year (Term GPA 3.83/4.00).<span class="school-right">Oct. 2016</span></li>
-                <li>Dean's List in the Fall Semester of the 2015-2016 academic year (Term GPA 3.80/4.00).<span class="school-right">Feb. 2016</span></li>
+                <li>Dean's List in the Summer Semester of the 2015-2016 academic year.<span class="school-right">Oct. 2016</span></li>
+                <li>Dean's List in the Fall Semester of the 2015-2016 academic year.<span class="school-right">Feb. 2016</span></li>
             </ul>
         </div>
     </div>
