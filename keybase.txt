@@ -6,24 +6,20 @@ I hereby claim:
 
   * I am an admin of https://jasonqsy.github.io
   * I am jasonqsy (https://keybase.io/jasonqsy) on keybase.
-  * I have a public key ASDiHADrWCelaltRV66HfEtCnIAY_rM-QAs4s8w6s21OKQo
+  * I have a public key with fingerprint 58C0 6F2B 5536 9DD8 220C  7AB2 8A61 CD8A 9F13 2B28
 
 To do so, I am signing this object:
 
 {
   "body": {
     "key": {
-      "eldest_kid": "01209d9952e07dfa1619d6d09ed5b337a089ec9478ed8ce3c50e0ef3af5d5d7b71150a",
+      "eldest_kid": "0101051a4de2cb6260879cb5a7a3e0b1eac77598e0453864453b2e6352b569865dd20a",
+      "fingerprint": "58c06f2b55369dd8220c7ab28a61cd8a9f132b28",
       "host": "keybase.io",
-      "kid": "0120e21c00eb5827a56a5b5157ae877c4b429c8018feb33e400b38b3cc3ab36d4e290a",
+      "key_id": "8a61cd8a9f132b28",
+      "kid": "0101051a4de2cb6260879cb5a7a3e0b1eac77598e0453864453b2e6352b569865dd20a",
       "uid": "87137dacb082723d27fa40be09be1519",
       "username": "jasonqsy"
-    },
-    "merkle_root": {
-      "ctime": 1520026770,
-      "hash": "f0c9885f59ede29b7c52461bc64c8e78fedc86d1cf498ac339bc3349ead8c99607a29ed67e3524d179b9a8ae6fdeb7c77dbb8fbdb353c32770488682437fe6fe",
-      "hash_meta": "60eae7cf2e839248060ecf7bdc008c812e268723dc2388e82899df1f2130c96d",
-      "seqno": 2177866
     },
     "service": {
       "hostname": "jasonqsy.github.io",
@@ -32,20 +28,41 @@ To do so, I am signing this object:
     "type": "web_service_binding",
     "version": 1
   },
-  "client": {
-    "name": "keybase.io go client",
-    "version": "1.0.44"
-  },
-  "ctime": 1520026877,
-  "expire_in": 504576000,
-  "prev": "8ee545cbb7c2f820530cbd99eed78f715907b1f75b12bd06bc8dc9e0504cd420",
-  "seqno": 15,
+  "ctime": 1542689712,
+  "expire_in": 157680000,
+  "prev": "ad145d1e8984c3e7a8a583920a6f04d28a5ae2fe161749549837b75d830cb1f5",
+  "seqno": 24,
   "tag": "signature"
 }
 
 which yields the signature:
 
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg4hwA61gnpWpbUVeuh3xLQpyAGP6zPkALOLPMOrNtTikKp3BheWxvYWTFA0t7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwOWQ5OTUyZTA3ZGZhMTYxOWQ2ZDA5ZWQ1YjMzN2EwODllYzk0NzhlZDhjZTNjNTBlMGVmM2FmNWQ1ZDdiNzExNTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZTIxYzAwZWI1ODI3YTU2YTViNTE1N2FlODc3YzRiNDI5YzgwMThmZWIzM2U0MDBiMzhiM2NjM2FiMzZkNGUyOTBhIiwidWlkIjoiODcxMzdkYWNiMDgyNzIzZDI3ZmE0MGJlMDliZTE1MTkiLCJ1c2VybmFtZSI6Imphc29ucXN5In0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTIwMDI2NzcwLCJoYXNoIjoiZjBjOTg4NWY1OWVkZTI5YjdjNTI0NjFiYzY0YzhlNzhmZWRjODZkMWNmNDk4YWMzMzliYzMzNDllYWQ4Yzk5NjA3YTI5ZWQ2N2UzNTI0ZDE3OWI5YThhZTZmZGViN2M3N2RiYjhmYmRiMzUzYzMyNzcwNDg4NjgyNDM3ZmU2ZmUiLCJoYXNoX21ldGEiOiI2MGVhZTdjZjJlODM5MjQ4MDYwZWNmN2JkYzAwOGM4MTJlMjY4NzIzZGMyMzg4ZTgyODk5ZGYxZjIxMzBjOTZkIiwic2Vxbm8iOjIxNzc4NjZ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiamFzb25xc3kuZ2l0aHViLmlvIiwicHJvdG9jb2wiOiJodHRwczoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuNDQifSwiY3RpbWUiOjE1MjAwMjY4NzcsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJwcmV2IjoiOGVlNTQ1Y2JiN2MyZjgyMDUzMGNiZDk5ZWVkNzhmNzE1OTA3YjFmNzViMTJiZDA2YmM4ZGM5ZTA1MDRjZDQyMCIsInNlcW5vIjoxNSwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEAfTNBT21LrJxlrXTlcfO4nMS6e6igTaP0KDt2bqaglX/hl0Z4aNw8Pc37GZHOXyryMZtX8cYR+VbADEPEDK1sOqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgNNTosRuvWyOpTxRvhMC/T8aYRCYt5ZcuG5mLZXevO/KjdGFnzQICp3ZlcnNpb24B
+-----BEGIN PGP MESSAGE-----
+
+owGtUntQVFUYX14TIhSgsk0E6E2YjA3v+7E6TYkkyAwWWJCU232c3b253ru797Ls
+zgpmTg0+AkoNacAENIcZiRYbwGAUfIxNlgaNrjE6UwnUqgOGQMwg0b2a/zT92Tkz
+58z3nd/v9z3OVxsXYYgOC84UlBwml/8UdjHEGUrv7TvphzhZ8EFmP7QFPLiAQwCK
+atkiCpAZghFtEwiLCwDlORIlYZpieI5gKRYDMIcAlqcogqEBjBMYTeLayaGAxAiU
+I0iGJglBQGEWMkFWUbIBt9MtSqomS9A8TFo1DIGRjCDQKArzFMuhNEsivECzjBXB
+UM3UiHZZ0RlachyrgCxR1nyaYXmQ3n/g/+e8yx7GoRCMElieg2mUQjEBpawsDnMA
+ZjiAEAijAxXgltitQEO/wyqy5FJ8UIUJ0rwekQd6Y/VK/oXIsomqvYx7WJXTLasy
+Lzu0d7uqOhWzzld9Tp1QDjjLP1IWTpQErZsawwPciihLkBnRkLwq6toIgaMkzVAI
+aoKA1ym6gUXUEQRF0rC29DjAo0myFgHBCQEBNEPjPAYolmYJGmO0ukkrjAvaZxAs
+QK0AIREKZwicoTGKowiBxmCeQ6wEpFfnkmTIjOJaoqxNE1VEm8SqZW4AVcTsCsci
+DWHRhpSkZZE/LnkzWFV3/8Zt5BvHoxGMCtfnzxCzIP6R5/Hn4w2tK39ZOu9cdMa+
+YfhOfPraJ73xnr5rfROneoyTvZVT/Z8srz1x9b4vJtNpu9H4UePA5vyZP/nOgq6O
+GKaypnr8s2eZ64t//vb41xmpQ1e8Tfm7Xj2cXVIPd3eGoOxtpoguZrK5zYUfPLBQ
+po7MfbB38Tbq4xFl6PwGV2PRmlfaAkxwaKLhYr5fobf3862uzKTfG+J37GujQ+NK
+aMVNbiGR/zTcn3t7E9az5MjZSzX7d4QORQx2SN6qlMTLM12pLUXXojcpHzr8OZ7k
+75JnxlbM3gHLqNOxUetmn3ns9YK9TRvh5JcDI9MjCTsj19/amBvRW/j52d+qJxJf
+jLR1Hw2un2v32tRzpsHsVU9MzIZbK8TOPyrV0ntVUXbfypMHDdfFlPOr7ae/X3e0
+pu49evW84VBudeOVPFTqc3mk2K0gqbzB+VdHQnPAMRZ8/8QX/PRA0w+DDbFXkcAq
+pO3Al619PcWMv+WMjAxPZe3ExfHd7kKq96mX1kS9VdSP1d7cb2Sn8OfSO+aVBYXR
+OenDtNfiudB8bEz69NSvOcXnzH0dx0umu4ouXArLCMwXB9KEvLiRhN2pLY0tA3kG
+k380zlQ+vid4yzv8xgv19TXttHGRYnp3z1dvV7VPJpaHjvUaa1MzjXNERl27zzha
+uplKaFmaPjpovNx0926asN2R1p24tph57W8=
+=fWrx
+-----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
