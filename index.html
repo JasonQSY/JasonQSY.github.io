@@ -28,19 +28,18 @@ layout: page
     <ul>
       {% for post in site.posts limit: 5 %}
         <li>
-            <a class="post-link homepage-post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          <a class="post-link homepage-post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </li>
       {% endfor %}
     </ul>
   </div>
-    <div class="location">
-      <h1 class="page-heading">Location</h1>
-      <div id="map" style="height: 250px; width: 100%;"></div>
+  <div class="location">
+    <h1 class="page-heading">Location</h1>
+    <div id="map" style="height: 250px; width: 100%;"></div>
   </div>
-  </div>
-  <div class="row" id="homepage-noti">
+  <!--<div class="row" id="homepage-noti">
     <p>This is a brand-new personal website in development. If there is any bug, I'll appreciate if you can open an issue on <a href="https://github.com/JasonQSY/JasonQSY.github.io">the repo</a>.</p>
-  </div>
+  </div>-->
 </div>
 
 <script>
