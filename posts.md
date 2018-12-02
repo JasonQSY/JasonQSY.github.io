@@ -1,7 +1,7 @@
 ---
 # left blank on purpose
 layout: home
-title: Posts
+title: Blog
 permalink: /posts/
 ---
 
