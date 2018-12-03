@@ -11,35 +11,119 @@ layout: page
     <img src="{{ site.avatar }}" width="300px">
   </div>
   <div class="homepage-name">
-    <p>I'm Shengyi Qian, a senior student of University of Michigan (UMich), major in Computer Science (CS). My primary research interest lies in Computer Vision.</p>
-    <p>Currently, I'm working as an undergraduate researcher in <a href="http://pvl.cs.princeton.edu">Princeton Vision and Learning Lab</a> directed by Prof. <a href="http://www.cs.princeton.edu/~jiadeng/">Jia Deng</a>. When I was in Shanghai Jiao Tong University, I worked in the Data Mining Group of <a href="http://wanglab.sjtu.edu.cn/">Wang's lab</a> directed by Prof. <a href="http://wanglab.sjtu.edu.cn/en/content.aspx?info_lb=472&flag=295">Xudong Wang</a>.</p>
+    <p>I'm Shengyi Qian, a senior student of University of Michigan and major in Computer Science (CS). My primary research interest lies in Computer Vision.</p>
+    <p>Currently, I'm working as an undergraduate research assistant in <a href="http://pvl.cs.princeton.edu">Princeton Vision and Learning Lab</a> directed by Prof. <a href="http://www.cs.princeton.edu/~jiadeng/">Jia Deng</a>. When I was in Shanghai Jiao Tong University, I worked in the <a href="http://wanglab.sjtu.edu.cn/">Wireless and Artificial Intelligence Lab</a> directed by Prof. <a href="http://wanglab.sjtu.edu.cn/en/content.aspx?info_lb=472&flag=295">Xudong Wang</a>.</p>
     <div>
       <a href="https://scholar.google.com/citations?hl=en&user=pwV4kdYAAAAJ">Google Scholar</a>.
       <a href="{{ site.cv }}">CV</a>.
       <a href="https://github.com/JasonQSY">Github</a>.
-      <a href="https://www.linkedin.com/in/jasonqsy/">Linkedin</a>.
+      <!--<a href="https://www.linkedin.com/in/jasonqsy/">Linkedin</a>.-->
       <!--<a href="{{ site.cv }}">CV</a>.-->
     </div>
   </div>
 </div>
-<div class="row" id="homepage-row2">
-  <div class="recent-posts">
-    <h1 class="page-heading">Recent Posts</h1>
-    <ul>
-      {% for post in site.posts limit: 5 %}
-        <li>
-          <a class="post-link homepage-post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </li>
-      {% endfor %}
-    </ul>
+
+<h1>Publications</h1>
+<div class="row homepage-row">
+  <div class="pub-img">
+    <img src="/resources/youtube3d.png">
   </div>
-  <div class="location">
-    <h1 class="page-heading">Location</h1>
-    <div id="map" style="height: 250px; width: 100%;"></div>
+  <div class="pub-content">
+    <div>
+    <div class="pub-title">Learning Single-Image Depth from Videos using Quality Assessment Networks.</div>
+    <div><a href="http://www-personal.umich.edu/~wfchen/">Weifeng Chen</a>, <strong>Shengyi Qian</strong>, <a href="http://www.cs.princeton.edu/~jiadeng/">Jia Deng</a>.</div>
+    <div>arXiv:1806.09573.</div>
+    <div>[<a href="http://www-personal.umich.edu/~wfchen/youtube3d/">project page</a>] [<a href="https://arxiv.org/abs/1806.09573">paper</a>]</div>
+    </div>
   </div>
 </div>
 
-<script>
+<h1>Projects</h1>
+<div class="row homepage-row">
+  <div class="pub-img">
+    <img src="/resources/eecs442_proj.png">
+  </div>
+  <div class="pub-content">
+    <div>
+    <div class="pub-title">Surface Normals Prediction From a Single Image.</div>
+    <div><strong>Shengyi Qian</strong>, <a href="https://jinlinyi.github.io/">Linyi Jin</a>, <a href="https://github.com/yangych29">Yichen Yang</a>.</div>
+    <div>EECS 442 Computer Vision (Instructor: Prof. Jia Deng) Group Challenge, 2018 Winter.</div>
+    <div>[<a href="/resources/eecs442_proj_report.pdf">slides</a>] [<a href="https://github.com/JasonQSY/surface_normal">code</a>]</div>
+    </div>
+  </div>
+</div>
+
+<div class="row homepage-row">
+  <div class="pub-img">
+    <img src="/resources/proj_rsa.png">
+  </div>
+  <div class="pub-content">
+    <div>
+    <div class="pub-title">Recovering the Private Key from a 384-bit RSA Public Key.</div>
+    <div><strong>Shengyi Qian</strong>.</div>
+    <div>Final Challenge of VE475 Introduction to Cryptography, 2017 Summer. I recovered the private key given a 384-bit RSA public key following <a href="https://eprint.iacr.org/2015/1000.pdf">Factoring as a Service</a> powered by Amazon Web Services.</div>
+    <div>[code]</div>
+    </div>
+  </div>
+</div>
+
+<div class="row homepage-row">
+  <div class="pub-img">
+    <img src="/resources/proj_robocup.jpg">
+  </div>
+  <div class="pub-content">
+    <div>
+    <div class="pub-title">Robocup Small Size Soccer League.</div>
+    <div>Seer Robotics Club.</div>
+    <div>International Champion of Robocup Small Size League 2017.</div>
+    <div>[<a href="https://www.robocup.org/leagues/7">result</a>]</div>
+    </div>
+  </div>
+</div>
+
+<div class="row homepage-row">
+  <div class="pub-img">
+    <img src="/resources/proj_mcm.png">
+  </div>
+  <div class="pub-content">
+    <div>
+    <div class="pub-title">Gravity Potential Model (GPM) and Flow Network Model for Effect of Self-Driving Cars on Traffic Flow.</div>
+    <div><strong>Shengyi Qian</strong>, Yichen Hu, <a href="https://blog.xlk.me/">Yixuan Chen</a>.</div>
+    <div>Honorable Mention, Mathematical Contest in Modeling 2017.</div>
+    <div>[report]</div>
+    </div>
+  </div>
+</div>
+
+<div class="row homepage-row">
+  <div class="pub-img">
+    <img src="/resources/proj_hackxfdu.png">
+  </div>
+  <div class="pub-content">
+    <div>
+    <div class="pub-title">Intelligent Venue Check-in System.</div>
+    <div>Xiaohan Fu, <strong>Shengyi Qian</strong>, <a href="https://blog.xlk.me/">Yixuan Chen</a>, Yifan Zhao, Chenggang Wu.</div>
+    <div>Microsoft's reward, HackxFDU 2016.</div>
+    <div>[<a href="https://github.com/Chuibility/venue_statics_system">code</a>]</div>
+    </div>
+  </div>
+</div>
+
+<div class="row homepage-row">
+  <div class="pub-img">
+    <img src="/resources/tongqu.png">
+  </div>
+  <div class="pub-content">
+    <div>
+    <div class="pub-title">Tongqu (同去网).</div>
+    <div><a href="https://dongyueweb.com/index-en-US.html">Dongyue Studio (东岳网络工作室)</a>.</div>
+    <div>The largest event platform of Shanghai Jiao Tong University.  I worked as a contributor and maintainer from Apr. 2016 - Aug. 2017.</div>
+    <div>[<a href="https://tongqu.me/">website</a>]</div>
+    </div>
+  </div>
+</div>
+
+<!--<script>
   function initMap() {
     var uluru = {lat: 42.293, lng: -83.716};
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -52,4 +136,4 @@ layout: page
     });
   }
 </script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkXf8ueJCbMU_CE1B13itCVuzg6HqhYL0&callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkXf8ueJCbMU_CE1B13itCVuzg6HqhYL0&callback=initMap"></script>-->

@@ -46,6 +46,10 @@
     margin-right: 50px;
 }
 
+.homepage-row {
+    align-items: center;
+}
+
 #homepage-row2 {
     align-items: flex-start;
 }
