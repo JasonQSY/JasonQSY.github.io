@@ -12,13 +12,12 @@ layout: page
   </div>
   <div class="homepage-name">
     <p>I'm Shengyi Qian, a senior student of the University of Michigan and major in Computer Science. My primary research interest lies in Computer Vision.</p>
-    <p>Currently, I'm working as an undergraduate research assistant in <a href="http://pvl.cs.princeton.edu">Princeton Vision & Learning Lab</a> directed by Prof. <a href="http://www.cs.princeton.edu/~jiadeng/">Jia Deng</a>. When I was in Shanghai Jiao Tong University, I worked in the <a href="http://wanglab.sjtu.edu.cn/">Wireless and Artificial Intelligence Lab</a> directed by Prof. <a href="http://wanglab.sjtu.edu.cn/en/content.aspx?info_lb=472&flag=295">Xudong Wang</a>.</p>
-    <p>I'm also serving as the Instructional Aide of <a href="https://web.eecs.umich.edu/~fouhey/teaching/EECS442_W19/">EECS442 Computer Vision, 2019 Winter</a> by Prof. <a href="https://web.eecs.umich.edu/~fouhey/">David Fouhey</a>.</p>
+    <p>Currently, I'm working as an undergraduate research assistant in <a href="http://pvl.cs.princeton.edu">Princeton Vision & Learning Lab</a> with Prof. <a href="http://www.cs.princeton.edu/~jiadeng/">Jia Deng</a>. At the same time, I'm serving as the Instructional Aide of <a href="https://web.eecs.umich.edu/~fouhey/teaching/EECS442_W19/">EECS442 Computer Vision</a> by Prof. <a href="https://web.eecs.umich.edu/~fouhey/">David Fouhey</a>.</p>
+    <!--<p>I also spent two years at Shanghai Jiao Tong University and worked in the <a href="http://wanglab.sjtu.edu.cn/">Wireless and Artificial Intelligence Lab</a> directed by Prof. <a href="http://wanglab.sjtu.edu.cn/en/content.aspx?info_lb=472&flag=295">Xudong Wang</a>.</p>-->
     <div>
       <a href="https://scholar.google.com/citations?hl=en&user=pwV4kdYAAAAJ">Google Scholar</a>.
       <a href="{{ site.cv }}">CV</a>.
       <a href="https://github.com/JasonQSY">Github</a>.
-      <!--<a href="https://www.linkedin.com/in/jasonqsy/">Linkedin</a>.-->
     </div>
   </div>
 </div>
@@ -32,13 +31,41 @@ layout: page
     <div>
     <div class="pub-title">Learning Single-Image Depth from Videos using Quality Assessment Networks.</div>
     <div><a href="http://www-personal.umich.edu/~wfchen/">Weifeng Chen</a>, <strong>Shengyi Qian</strong>, <a href="http://www.cs.princeton.edu/~jiadeng/">Jia Deng</a>.</div>
-    <div>arXiv:1806.09573.</div>
+    <div>To appear at <i>IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</i>, 2019.</div>
     <div>[<a href="http://www-personal.umich.edu/~wfchen/youtube3d/">project page</a>] [<a href="https://arxiv.org/abs/1806.09573">paper</a>]</div>
     </div>
   </div>
 </div>
 
 <h1>Projects</h1>
+
+<!--<div class="row homepage-row">
+  <div class="pub-img">
+    <img src="/resources/convai.png">
+  </div>
+  <div class="pub-content">
+    <div>
+    <div class="pub-title">Understanding Data Visualization via Question Answering.</div>
+    <div><a href="https://carolzxyzxy.github.io/">Xinyi Zheng</a>, <strong>Shengyi Qian</strong>, <a href="http://www-personal.umich.edu/~wennyi/">Yi Wen</a>, Mark Jin, Tim Shen.</div>
+    <div>Course Project, EECS 498/598 Deep Learning, 2019 Winter. Instructor: Prof. Honglak Lee.</div>
+    <div>[<a href="/convai">project page</a>] [report]</div>
+    </div>
+  </div>
+</div>
+
+<div class="row homepage-row">
+  <div class="pub-img">
+    <img src="/resources/convai.png">
+  </div>
+  <div class="pub-content">
+    <div>
+    <div class="pub-title">Bring Vision to the Blind through Conversation.</div>
+    <div>Ray Cao, <a href="https://jinlinyi.github.io/">Linyi Jin</a>, <strong>Shengyi Qian</strong>, Chung-Hsun Wang, <a href="http://www-personal.umich.edu/~wennyi/">Yi Wen</a>, I-Le Wu, <a href="https://carolzxyzxy.github.io/">Xinyi Zheng</a>.</div>
+    <div>Capstone Project, 2019 Winter.</div>
+    <div>[<a href="/convai">project page</a>]</div>
+    </div>
+  </div>
+</div>-->
 
 <div class="row homepage-row">
   <div class="pub-img">
@@ -48,7 +75,7 @@ layout: page
     <div>
     <div class="pub-title">3D Bounding Box Detection of Vehicles.</div>
     <!--<div>-</div>-->
-    <div>ROB 535 Self-driving Cars: Perception and Control Final Project, 2018 Fall.</div>
+    <div>Course Project, ROB 535 Self-driving Cars: Perception and Control, 2018 Fall.</div>
     <div>[report]</div>
     </div>
   </div>
@@ -62,7 +89,8 @@ layout: page
     <div>
     <div class="pub-title">Surface Normals Prediction From a Single Image.</div>
     <div><strong>Shengyi Qian</strong>, <a href="https://jinlinyi.github.io/">Linyi Jin</a>, <a href="https://github.com/yangych29">Yichen Yang</a>.</div>
-    <div>EECS 442 Computer Vision (Instructor: Prof. Jia Deng) Group Challenge, 2018 Winter.</div>
+    <div>Instructor: Prof. Jia Deng.</div>
+    <div>Course Project, EECS 442 Computer Vision, 2018 Winter.</div>
     <div>[<a href="/resources/eecs442_proj_report.pdf">slides</a>] [<a href="https://github.com/JasonQSY/surface_normal">code</a>]</div>
     </div>
   </div>
@@ -137,18 +165,3 @@ layout: page
     </div>
   </div>
 </div>
-
-<!--<script>
-  function initMap() {
-    var uluru = {lat: 42.293, lng: -83.716};
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 9,
-      center: uluru
-    });
-    var marker = new google.maps.Marker({
-      position: uluru,
-      map: map
-    });
-  }
-</script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkXf8ueJCbMU_CE1B13itCVuzg6HqhYL0&callback=initMap"></script>-->
