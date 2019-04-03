@@ -4,10 +4,6 @@ title:  "About Me"
 permalink: /about/
 ---
 
-I'm
-
-- Shengyi Qian (jasonsyqian@gmail.com)
-- Shengyi Qian (syqian@umich.edu)
 
 Download my GPG public key at [pubkey_syqian.txt](pubkey_syqian.txt).
 The copy should also be available at

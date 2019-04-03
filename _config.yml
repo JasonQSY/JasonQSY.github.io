@@ -26,7 +26,7 @@ plugins:
   - jekyll-feed
 
 global_css: '/static/website.css'
-avatar: '/static/avatar.jpg'
+avatar: '/static/avatar.png'
 cv: '/resources/syqian_cv.pdf'
 
 # Exclude from processing.
