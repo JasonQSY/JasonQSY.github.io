@@ -3,11 +3,10 @@ layout: post
 title:  "Notes of Numerical Analysis"
 date:   2017-10-19
 categories: mathematics
+toc: true
 ---
 
 This post is a learning notes of numerical analysis.
-
-[TOC]
 
 ## Convergence
 
@@ -76,7 +75,9 @@ A fixed point is a point $x$ such that $f(x) = x$. There are several methods we 
 
 **Theorem 1**. If $g$ is a continuous function with $g(a), g(b) \in [a, b] \subset \mathbb{R}$, then $g$ has a fixed point in $[a, b]$.
 
-**Theorem 2**. Let $g$ be a smooth function on $\mathbb{R}$ such that $g: [a, b] \to [a, b]$ and there exists a $0 \le \theta < 1$ s.t. $|g'(x)| \le \theta$ for all $x \in [a, b]$, then
+**Theorem 2**. Let $g$ be a smooth function on $\mathbb{R}$ such that
+$g: [a, b] \to [a, b]$ and there exists a $0 \le \theta < 1$ s.t.
+$|g'(x)| \le \theta$ for all $x \in [a, b]$, then
 
 1. there exists a unique fixed point of $g$ in $[a, b]$.
 2. $x_{n+1} = g(x_n)$ converges to the fixed point if $x_0 \in [a,b]$.
@@ -185,7 +186,7 @@ $$A = QR​$$
 
 where $Q$ is orthonormal ($m\times n$) and $R$ is a upper-triangle $n\times n$ matrix. It can be factored efficiently by Gram-Schimidt Procedure.
 
-```Matlab
+```matlab
 % Gram-Schimidt Procedure
 function [Q, R] = gs(A)
     [m, n] = size(A);
@@ -280,10 +281,11 @@ $$x_{n+1} = Ax_n$$
 will converge to $cv_1$ as $n \to \infty$. In summary, we randomly choose $x_0$, then
 
 1. Iteration: $\hat{x}_{n+1} = Ax_n$
-2. Renormalize: $x_{n+1} = \hat{x}_{n+1} / ||\hat{x}_{n+1}||$
+2. Renormalize: $x_{n+1} = \hat{x}\_{n+1} / \|\| \hat{x}\_{n+1}\|\| $
 3. Approx eval: $\mu_{n+1} = x_{n+1}^T A x_{n+1}$
 
-```Matlab
+
+```matlab
 function e = eigen(A, N)
     % estimate the largest eigenvalue of a matrix A.
     [n, ~] = size(A);
@@ -310,7 +312,7 @@ Then for a good enough initial guess $\mu_0$, we can apply power iteration to $(
 
 We can use Rayleigh Quotient Iteration to speed up convergence. The order is quadratic. However, it requires better initial guess. Hence, in practice, we tends to use power iteration first, and then switch to Rayleigh Quotient Iteration.
 
-```Matlab
+```matlab
 function [mu, v] = rq_it(A, N, mu, x)
     % implement the Rayleigh Quotient iteration.
     % A - matrix
@@ -330,7 +332,7 @@ end
 
 Simulatenous power iteration is used to find all the eigenvalues of a matrix.
 
-```Matlab
+```matlab
 function [Q, mu] = spi(A, N)
 	[n, ~] = size(A);
 	Q = rand(n, n);
@@ -345,7 +347,7 @@ end
 
 QR algorithm is cubic convergence to any matrix concurrently.
 
-```Matlab
+```matlab
 function Q = qr_algorithm(A, N)
 	[Q, R] = mgs(A);
 	for i = 1:N
@@ -404,4 +406,4 @@ $$I_n(f) = \sum_{i=0}^n f(x_i) \int_a^b L_i(x)dx$$
 ## Reference
 
 - A Friendly Introduction to Numerical Analysis.
-- UMich MATH 371 Introduction to Numerical Methods.
+- MATH 371 Introduction to Numerical Methods, University of Michigan.

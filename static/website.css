@@ -139,3 +139,15 @@
     font-size: 18px;
     margin-bottom: 10px;
 }
+
+pre,
+code {
+    font-size: 15px;
+    border: 1px dashed grey;
+    border-radius: 3px;
+    background-color: #FFFFFF !important;
+}
+
+code {
+    padding: 1px 5px;
+}

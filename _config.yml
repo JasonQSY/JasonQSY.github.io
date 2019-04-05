@@ -12,7 +12,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Copyright © 2015 - 2019 @JasonQSY
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://jasonqsy.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-version: 2.0.0
+version: 2.0.1
 
 # third-party accounts
 github_username: JasonQSY
@@ -20,10 +20,12 @@ disqus:
     shortname: jasonqian
 
 # Build settings
-markdown: kramdown
+markdown: Kramdown
+highlighter: rouge
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-toc
 
 global_css: '/static/website.css'
 avatar: '/static/avatar.png'

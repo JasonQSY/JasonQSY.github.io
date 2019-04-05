@@ -16,7 +16,7 @@ layout: default
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    {{ content }}
+    {{ content | toc }}
   </div>
 
   {% if site.disqus.shortname %}
@@ -24,4 +24,10 @@ layout: default
   {% endif %}
 </article>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
