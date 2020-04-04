@@ -181,5 +181,5 @@ code {
 }
 
 .img-wall-element > img {
-    height: 160px;
+    max-height: 160px;
 }
