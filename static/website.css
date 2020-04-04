@@ -163,3 +163,23 @@ code {
 code {
     padding: 1px 5px;
 }
+
+.img-wall {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.img-wall-element {
+    max-width: 250px;
+}
+
+.img-wall-element > div {
+    display: flex;
+    justify-content: center;
+}
+
+.img-wall-element > img {
+    height: 160px;
+}
