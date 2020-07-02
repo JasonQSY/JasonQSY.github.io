@@ -4,18 +4,17 @@ My personal website has been rewritten. It has been migrated from pelican to Jek
 
 ## Environment
 
-We need `rust` and `gem`.
+We need `ruby` and `gem`.
 
 ```bash
-gem install jekyll
+gem install bundler jekyll
+bundle install --path vendor/bundle
 ```
 
 ## Development
 
-We use `_config_dev.yml` for development. Just type
-
 ```bash
-jekyll serve --config _config_dev.yml
+bundle exec jekyll serve --config _config.yml
 ```
 
 ## Deploy
