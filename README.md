@@ -7,8 +7,10 @@ My personal website has been rewritten. It has been migrated from pelican to Jek
 We need `ruby` and `gem`.
 
 ```bash
+brew install ruby # you may need to add ruby to PATH
+bundle config set --local path 'vendor/bundle'
 gem install bundler jekyll
-bundle install --path vendor/bundle
+bundle install --path vendor/bundle # you may need to remove Gemfile.lock
 ```
 
 ## Development
