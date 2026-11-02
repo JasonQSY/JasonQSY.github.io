@@ -29,9 +29,15 @@ bundle install
 bundle exec jekyll serve --config _config.yml
 ```
 
+## Content
+
+News and publications are data-driven: edit `_data/news.yml` (news items) and `_data/publications.yml` (publications), rendered by `_includes/publication.html`. Do not hand-edit the News and Publications sections in `index.html`; they are loops over the data files. Work Experience and Teaching are still written directly in `index.html`.
+
+Images live in `resources/` and `static/`. Keep their filenames and formats stable so existing references keep working.
+
 ## Deploy
 
-Just push to the Github repo.
+Pushing to `master` triggers the CI workflow (`.github/workflows/ci.yml`), which builds the site with `bundle exec jekyll build --strict_front_matter`, and GitHub Pages deploys the result. Changes should go through a pull request for review, not a direct push to `master`.
 
 ## Reference
 
