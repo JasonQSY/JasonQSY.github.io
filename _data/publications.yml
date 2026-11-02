@@ -1,0 +1,878 @@
+- title: 'Muse Glimmer 30B: An On-Device Agentic Model'
+  image: /resources/muse_glimmer_benchmarks.svg
+  image_style: 'margin-top: 10px; margin-bottom: 10px;'
+  image_alt: Muse Glimmer benchmark comparison across agentic, coding, and multimodal tasks.
+  image_link: https://arxiv.org/abs/2610.24628
+  note: Core contributor / Multimodal lead.
+  body:
+  - kind: venue
+    tag: p
+    text: Technical Report, 2026.
+  - kind: description
+    tag: p
+    text: Muse Glimmer is a 30-billion-parameter open agentic model optimized for always-on local workflows on consumer hardware.
+  - kind: links
+    tag: p
+    links:
+    - label: technical report
+      url: https://arxiv.org/abs/2610.24628
+    - label: blog
+      url: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model/
+    - label: model
+      url: https://huggingface.co/meta-models/Muse-Glimmer-30B
+    - label: documentation
+      url: https://dev.meta.ai/docs/muse-glimmer
+- title: 'SlideForge: An LLM Agent for Controllable Editing of Slides as Structured Artifacts'
+  image: /resources/slideforge.png
+  image_style: 'margin-top: 10px; margin-bottom: 10px;'
+  image_alt: 'SlideForge overview: slide decomposition into editable components and style adaptation that preserves content and layout.'
+  image_link: https://arxiv.org/abs/2609.03109
+  authors:
+  - name: Haozhen Zheng
+    url: https://github.com/zoezheng126
+    mark: '*'
+  - name: Fulin Wang
+    url: https://github.com/fulinw2
+    mark: '*'
+  - name: Tianhu Xiong
+    url: https://www.linkedin.com/in/tianhu-xiong
+  - name: Yingjie Yu
+  - name: Shengyi Qian
+    self: true
+  - name: Hanchao Yu
+  - name: Alex Schwing
+    url: https://alexander-schwing.de/
+  - name: Klara Nahrstedt
+    url: https://monet.cs.illinois.edu/people/klara/
+  - name: Mingyuan Wu
+    url: https://mingyuan1997.github.io/
+  body:
+  - kind: venue
+    tag: p
+    text: EMNLP 2026 (Main Conference).
+  - kind: links
+    tag: p
+    links:
+    - label: paper
+      url: https://arxiv.org/abs/2609.03109
+    - label: code
+      url: https://github.com/UIUC-MONET/SLIDEFORGE
+- title: 'Beyond Language Modeling: An Exploration of Multimodal Pretraining'
+  image: /resources/beyondllms.png
+  image_style: 'margin-top: 10px; margin-bottom: 10px;'
+  authors:
+  - name: Shengbang Tong
+    url: https://tsb0601.github.io/
+    mark: '*'
+  - name: David Fan
+    url: http://davidfan.io/
+    mark: '*'
+  - name: John Nguyen
+    url: https://johnlnguyen.com/
+    mark: '*'
+  - name: Ellis Brown
+    url: https://ellisbrown.github.io/
+  - name: Gaoyue Zhou
+    url: https://gaoyuezhou.github.io/
+  - name: Shengyi Qian
+    self: true
+  - name: Boyang Zheng
+    url: https://bytetriper.github.io/
+  - name: Théophane Vallaeys
+    url: https://webalorn.com/
+  - name: Junlin Han
+    url: https://junlinhan.github.io/
+  - name: Rob Fergus
+    url: https://cs.nyu.edu/~fergus/
+  - name: Naila Murray
+    url: https://scholar.google.com/citations?user=MBU5wKEAAAAJ&hl=en
+  - name: Marjan Ghazvininejad
+    url: https://scholar.google.com/citations?user=0VG3sQIAAAAJ&hl=en
+  - name: Mike Lewis
+    url: https://scholar.google.com/citations?user=SnQnQicAAAAJ&hl=en
+  - name: Nicolas Ballas
+    url: https://scholar.google.com/citations?user=euUV4iUAAAAJ&hl=en
+  - name: Amir Bar
+    url: https://www.amirbar.net/
+  - name: Michael Rabbat
+    url: https://scholar.google.ca/citations?user=cMPKe9UAAAAJ&hl=en
+  - name: Jakob Verbeek
+    url: https://thoth.inrialpes.fr/~verbeek/
+  - name: Luke Zettlemoyer
+    url: https://www.cs.washington.edu/people/faculty/lsz
+    mark: †
+  - name: Koustuv Sinha
+    url: https://koustuvsinha.com/
+    mark: †
+  - name: Yann LeCun
+    url: https://scholar.google.com/citations?user=WLN3QrAAAAAJ&hl=en
+    mark: †
+  - name: Saining Xie
+    url: https://www.sainingxie.com/
+    mark: †
+  body:
+  - kind: venue
+    tag: p
+    text: ICML 2026.
+  - kind: links
+    tag: p
+    links:
+    - label: project page
+      url: https://beyond-llms.github.io/
+    - label: paper
+      url: https://arxiv.org/abs/2603.03276
+- title: Hierarchical Procedural Meta-Reasoning for Generalizable Multimodal Agents.
+  image: /resources/procedural_meta_reasoning.png
+  image_style: 'margin-top: 10px; margin-bottom: 10px;'
+  authors:
+  - name: Yao Fu
+    url: https://www.linkedin.com/in/violet-fu-9693a0333/
+  - name: Shengyi Qian
+    self: true
+  - name: Pierluca D'Oro
+    url: https://proceduralia.com/
+  - name: Fanyi Xiao
+    url: https://fanyix.cs.ucdavis.edu/
+  - name: Honglak Lee
+    url: https://web.eecs.umich.edu/~honglak/
+  - name: Joseph Tighe
+    url: https://jovapo.github.io/
+  - name: Manchen Wang
+  body:
+  - kind: venue
+    tag: p
+    text: ICML 2026.
+  - kind: links
+    tag: p
+    links:
+    - label: paper
+      url: https://openreview.net/forum?id=v2H2vzRqcr
+- title: 'Beyond 3D VQAs: Injecting 3D Spatial Priors into Vision-Language Models for Enhanced Geometric Reasoning'
+  image: /resources/gasp.png
+  image_style: 'margin-top: 10px; margin-bottom: 10px;'
+  authors:
+  - name: Chun-Hsiao Yeh
+    url: https://danielchyeh.github.io/
+  - name: Shengyi Qian
+    self: true
+  - name: Manchen Wang
+  - name: Yi Ma
+    url: https://people.eecs.berkeley.edu/~yima/
+  - name: Joseph Tighe
+    url: https://jovapo.github.io/
+  - name: Fanyi Xiao
+    url: https://fanyix.cs.ucdavis.edu/
+  body:
+  - kind: venue
+    tag: p
+    text: CVPR 2026.
+  - kind: links
+    tag: p
+    links:
+    - label: project page
+      url: https://danielchyeh.github.io/GASP/
+    - label: paper
+      url: https://arxiv.org/abs/2605.30231
+    - label: code
+      url: https://github.com/danielchyeh/GASP
+- title: 'Circuit Tracing in Vision-Language Models: Understanding the Internal Mechanisms of Multimodal Thinking'
+  image: /resources/circuit.png
+  image_style: 'margin-top: 10px; margin-bottom: 10px;'
+  authors:
+  - name: Jingcheng Yang
+    url: https://jingcheng.me/
+  - name: Tianhu Xiong
+    url: https://www.linkedin.com/in/tianhu-xiong
+  - name: Shengyi Qian
+    self: true
+  - name: Klara Nahrstedt
+    url: https://monet.cs.illinois.edu/people/klara/
+  - name: Mingyuan Wu
+    url: https://mingyuan1997.github.io/
+  body:
+  - kind: venue
+    tag: p
+    text: CVPR 2026 Findings.
+  - kind: links
+    tag: p
+    links:
+    - label: paper
+      url: https://arxiv.org/abs/2602.20330
+- title: Learning Personalized Agents from Human Feedback
+  image: /resources/pahf.jpeg
+  image_style: 'margin-top: 10px; margin-bottom: 10px;'
+  authors:
+  - name: Kaiqu Liang
+    url: https://kaiquliang.github.io
+  - name: Julia Kruk
+    url: https://www.linkedin.com/in/julia-kruk-854155112/
+  - name: Shengyi Qian
+    self: true
+  - name: Xianjun Yang
+    url: https://xianjun-yang.github.io/
+  - name: Shengjie Bi
+    url: https://www.linkedin.com/in/shengjie-bi-9a044257/
+  - name: Yuanshun Yao
+    url: https://www.kevyao.com/
+  - name: Shaoliang Nie
+    url: https://www.linkedin.com/in/shaoliang-nie/
+  - name: Mingyang Zhang
+    url: https://www.linkedin.com/in/mingyang-zhang/
+  - name: Lijuan Liu
+    url: https://www.linkedin.com/in/lijuanliu-ll/
+  - name: Jaime Fernández Fisac
+    url: //saferobotics.princeton.edu/jaime
+  - name: Shuyan Zhou
+    url: https://www.shuyanzhou.com/
+  - name: Saghar Hosseini
+    url: https://saghar-hosseini.com/
+  body:
+  - kind: venue
+    tag: p
+    text: arXiv 2026.
+  - kind: links
+    tag: p
+    links:
+    - label: project page
+      url: https://personalized-ai.github.io/
+    - label: paper
+      url: https://arxiv.org/abs/2602.16173
+    - label: code
+      url: https://github.com/facebookresearch/PAHF
+- title: 'DigiData: Training and Evaluating General-Purpose Mobile Control Agents'
+  image: /resources/digidata.png
+  image_style: 'margin-top: 10px; margin-bottom: 10px;'
+  authors:
+  - name: Yuxuan Sun
+    mark: '*'
+    mark_plain: true
+  - name: Manchen Wang
+    mark: '*'
+    mark_plain: true
+  - name: Shengyi Qian
+    self: true
+    mark: '*'
+    mark_plain: true
+  - name: William R. Wong
+    mark: '*'
+    mark_plain: true
+  - name: Eric Gan
+    mark: '*'
+    mark_plain: true
+  - name: Pierluca D’Oro
+    url: https://proceduralia.github.io/
+    mark: '*'
+    mark_plain: true
+  - name: Alejandro Castillejo Munoz
+  - name: Sneha Silwal
+  - name: Pedro Matias
+  - name: Nitin Kamra
+    url: https://nitinkamra1992.github.io/
+  - name: Satwik Kottur
+    url: https://satwikkottur.github.io/
+  - name: Nick Raines
+  - name: Xuanyi Zhao
+  - name: Joy Chen
+  - name: Joseph Greer
+    url: https://scholar.google.com/citations?user=guL96CkAAAAJ&hl=en
+  - name: Andrea Madotto
+    url: https://andreamad8.github.io/
+  - name: Allen Bolourchi
+  - name: James Valori
+  - name: Kevin Carlberg
+    url: https://kevintcarlberg.net/
+  - name: Karl Ridgeway
+    url: https://scholar.google.com/citations?user=WiWKsngAAAAJ&hl=en
+  - name: Joseph Tighe
+    url: https://jovapo.github.io/
+  body:
+  - kind: venue
+    tag: p
+    text: arXiv 2025.
+  - kind: links
+    tag: p
+    links:
+    - label: project page
+      url: https://facebookresearch.github.io/DigiData/
+    - label: paper
+      url: https://arxiv.org/abs/2511.07413
+    - label: code
+      url: https://github.com/facebookresearch/DigiData
+- title: 'DISCO Balances the Scales: Adaptive Domain- and Difficulty-Aware Reinforcement Learning on Imbalanced Data'
+  image: /resources/disco.png
+  image_style: 'margin-top: 10px; margin-bottom: 10px;'
+  authors:
+  - name: Yuhang Zhou
+    url: https://tonyzhou98.github.io/
+    mark: '*'
+    mark_plain: true
+  - name: Jing Zhu
+    url: https://jwzhi.github.io/
+    mark: '*'
+    mark_plain: true
+  - name: Shengyi Qian
+    self: true
+  - name: Zhuokai Zhao
+    url: https://zhuokai-zhao.com/
+  - name: Xiyao Wang
+    url: https://scholar.google.com/citations?user=puVqfbwAAAAJ&hl=en
+  - name: Xiaoyu Liu
+    url: https://scholar.google.com/citations?user=EcHTiyIAAAAJ&hl=en
+  - name: Ming Li
+  - name: Paiheng Xu
+    url: https://paihengxu.github.io/
+  - name: Wei Ai
+    url: https://aiwei.me/
+  - name: Furong Huang
+    url: https://furong-huang.com/
+  body:
+  - kind: venue
+    tag: p
+    text: EMNLP 2025 (Findings).
+  - kind: links
+    tag: p
+    links:
+    - label: paper
+      url: https://arxiv.org/abs/2505.15074
+- title: '3D-MVP: 3D Multiview Pretraining for Robotic Manipulation'
+  image: /resources/3dmvp.png
+  image_style: 'margin-top: 10px; margin-bottom: 10px;'
+  authors:
+  - name: Shengyi Qian
+    self: true
+  - name: Kaichun Mo
+    url: https://kaichun-mo.github.io/
+  - name: Valts Blukis
+    url: https://www.cs.cornell.edu/~valts/
+  - name: David Fouhey
+    url: https://cs.nyu.edu/~fouhey/
+  - name: Dieter Fox
+    url: https://homes.cs.washington.edu/~fox/
+  - name: Ankit Goyal
+    url: https://imankgoyal.github.io/
+  body:
+  - kind: venue
+    tag: p
+    text: CVPR 2025.
+  - kind: links
+    tag: p
+    links:
+    - label: project page
+      url: https://jasonqsy.github.io/3DMVP/
+    - label: paper
+      url: https://arxiv.org/abs/2406.18158
+- title: 'Mosaic of Modalities: A Comprehensive Benchmark for Multimodal Graph Learning'
+  image: /resources/mm_graph_benchmark.png
+  image_style: 'margin-top: 10px; margin-bottom: 10px;'
+  authors:
+  - name: Jing Zhu
+    url: https://jwzhi.github.io/
+  - name: Yuhang Zhou
+    url: https://tonyzhou98.github.io/
+  - name: Shengyi Qian
+    self: true
+  - name: Zhongmou He
+    url: https://scholar.google.com/citations?user=fzM8jcwAAAAJ&hl=zh-CN
+  - name: Tong Zhao
+    url: https://tzhao.io/
+  - name: Neil Shah
+    url: https://nshah.net/
+  - name: Danai Koutra
+    url: https://web.eecs.umich.edu/~dkoutra/
+  body:
+  - kind: venue
+    tag: p
+    text: CVPR 2025.
+  - kind: links
+    tag: p
+    links:
+    - label: project page
+      url: https://mm-graph-benchmark.github.io/
+    - label: paper
+      url: https://arxiv.org/abs/2406.16321
+- title: '3D-GRAND: Towards Better Grounding and Less Hallucination for 3D-LLMs'
+  image: /resources/3d_grand.png
+  image_style: 'margin-top: 10px; margin-bottom: 10px;'
+  authors:
+  - name: Jianing (Jed) Yang
+    url: https://jedyang.com/
+    mark: '*'
+    mark_plain: true
+  - name: Xuweiyi Chen
+    url: https://xuweiyichen.github.io/
+    mark: '*'
+    mark_plain: true
+  - name: Nikhil Madaan
+    url: https://madaan-nikhil.github.io/
+  - name: Madhavan Iyengar
+    url: https://madhavaniyengar.github.io/
+  - name: Shengyi Qian
+    self: true
+  - name: David Fouhey
+    url: https://cs.nyu.edu/~fouhey/
+  - name: Joyce Y. Chai
+    url: https://web.eecs.umich.edu/~chaijy/
+  body:
+  - kind: venue
+    tag: p
+    text: CVPR 2025.
+  - kind: links
+    tag: p
+    links:
+    - label: project page
+      url: https://3d-grand.github.io/
+    - label: paper
+      url: https://arxiv.org/abs/2406.05132
+    - label: demo
+      url: https://huggingface.co/spaces/jedyang97/3D-GRAND
+- title: Multi-Object Hallucination in Vision-Language Models
+  image: /resources/rope.jpg
+  image_style: 'margin-top: 10px; margin-bottom: 10px;'
+  authors:
+  - name: Xuweiyi Chen
+    url: https://xuweiyichen.github.io/
+    mark: '*'
+    mark_plain: true
+  - name: Ziqiao Ma
+    url: https://mars-tin.github.io/
+    mark: '*'
+    mark_plain: true
+  - name: Xuejun Zhang
+    url: https://xuejunzhang2002.github.io/
+    mark: '*'
+    mark_plain: true
+    mark_inside: true
+  - name: Sihan Xu
+    url: https://sihanxu.github.io/
+  - name: Shengyi Qian
+    self: true
+  - name: Jianing (Jed) Yang
+    url: https://jedyang.com/
+  - name: David Fouhey
+    url: https://cs.nyu.edu/~fouhey/
+  - name: Joyce Y. Chai
+    url: https://web.eecs.umich.edu/~chaijy/
+  body:
+  - kind: venue
+    tag: p
+    text: NeurIPS 2024.
+  - kind: links
+    tag: p
+    links:
+    - label: project page
+      url: https://multi-object-hallucination.github.io/
+    - label: paper
+      url: https://arxiv.org/abs/2407.06192
+    - label: code
+      url: https://github.com/sled-group/moh
+    - label: dataset
+      url: https://huggingface.co/datasets/sled-umich/ROPE
+- title: 'LinkGPT: Teaching Large Language Models To Predict Missing Links'
+  image: /resources/linkgpt.png
+  image_style: 'margin-top: 10px; margin-bottom: 10px;'
+  authors:
+  - name: Zhongmou He
+    url: https://www.linkedin.com/in/zhongmou-he-0739b6280/
+  - name: Jing Zhu
+    url: https://jwzhi.github.io/
+  - name: Shengyi Qian
+    self: true
+  - name: Joyce Y. Chai
+    url: https://web.eecs.umich.edu/~chaijy/
+  - name: Danai Koutra
+    url: https://web.eecs.umich.edu/~dkoutra/
+  body:
+  - kind: venue
+    tag: p
+    text: CIKM 2025.
+  - kind: links
+    tag: p
+    links:
+    - label: paper
+      url: https://arxiv.org/abs/2406.04640
+  - kind: extra
+    tag: p
+    text: The paper is also presented at NeurIPS 2024 Workshop on Adaptive Foundation Models.
+- title: 'AffordanceLLM: Grounding Affordance from Vision Language Models'
+  image: /resources/affordancellm.png
+  image_style: 'margin-top: 10px; margin-bottom: 10px;'
+  authors:
+  - name: Shengyi Qian
+    self: true
+  - name: Weifeng Chen
+    url: https://wfchen-umich.github.io/wfchen.github.io/
+  - name: Min Bai
+    url: https://www.cs.toronto.edu/~mbai/
+  - name: Xiong Zhou
+    url: https://scholar.google.com/citations?user=MqZPM6AAAAAJ&hl=en
+  - name: Zhuowen Tu
+    url: https://pages.ucsd.edu/~ztu/
+  - name: Li Erran Li
+    url: https://www.cs.columbia.edu/~lierranli/
+  body:
+  - kind: venue
+    tag: div
+    text: OpenSUN3D @ CVPR 2024.
+  - kind: description
+    tag: p
+    text: We aim to enhance the generalization capability of affordance grounding to in-the-wild objects that are unseen during training, by developing a new approach AffordanceLLM, that takes the advantage of the rich knowledge from large-scale VLMs.
+  - kind: links
+    tag: p
+    links:
+    - label: project page
+      url: https://jasonqsy.github.io/AffordanceLLM/
+    - label: paper
+      url: https://arxiv.org/abs/2401.06341
+- title: 'LLM-Grounder: Open-Vocabulary 3D Visual Grounding with Large Language Model as an Agent'
+  image: /resources/llm_grounder.png
+  image_style: 'margin-top: 10px; margin-bottom: 10px;'
+  authors:
+  - name: Jianing (Jed) Yang
+    url: https://jedyang.com/
+    mark: '*'
+    mark_plain: true
+  - name: Xuweiyi Chen
+    url: https://xuweiyichen.github.io/
+    mark: '*'
+    mark_plain: true
+  - name: Shengyi Qian
+    self: true
+  - name: Nikhil Madaan
+    url: https://madaan-nikhil.github.io/
+  - name: Madhavan Iyengar
+    url: https://madhavaniyengar.github.io/
+  - name: David Fouhey
+    url: https://cs.nyu.edu/~fouhey/
+  - name: Joyce Y. Chai
+    url: https://web.eecs.umich.edu/~chaijy/
+  body:
+  - kind: venue
+    tag: div
+    text: ICRA 2024.
+  - kind: description
+    tag: p
+    text: Adding an LLM agent can be a simple and effective way to improve 3D grounding capabilities for zero-shot open-vocabulary methods, especially when the query is complex.
+  - kind: links
+    tag: p
+    links:
+    - label: project page
+      url: https://chat-with-nerf.github.io/
+    - label: paper
+      url: https://arxiv.org/abs/2309.12311
+    - label: demo
+      url: http://sled-whistler.eecs.umich.edu:7777/
+    - label: code
+      url: https://github.com/sled-group/chat-with-nerf
+    - label: video
+      url: https://www.youtube.com/watch?v=eO-Vaf-1R1s&ab_channel=UMichSLEDLab
+  - kind: extra
+    tag: p
+    text: The paper is also presented at <a href="https://sites.google.com/view/langrob-corl23/home">CoRL 2023 Workshop on Language and Robot Learning</a>.
+- title: 'Pitfalls in Link Prediction with Graph Neural Networks: Understanding the Impact of Target-link Inclusion & Better Practices'
+  image: /resources/spottarget.png
+  image_style: 'margin-top: 10px; margin-bottom: 10px;'
+  authors:
+  - name: Jing Zhu
+    url: https://jwzhi.github.io/
+    mark: '*'
+    mark_plain: true
+  - name: Yuhang Zhou
+    url: https://tonyzhou98.github.io/
+    mark: '*'
+    mark_plain: true
+  - name: Vassilis N. Ioannidis
+    url: https://sites.google.com/site/vasioannidispw/home
+  - name: Shengyi Qian
+    self: true
+  - name: Wei Ai
+    url: https://aiwei.me/
+  - name: Xiang Song
+    url: https://scholar.google.com/citations?user=LyPpCKwAAAAJ&hl=en
+  - name: Danai Koutra
+    url: https://web.eecs.umich.edu/~dkoutra/
+  body:
+  - kind: venue
+    tag: div
+    text: WSDM 2024 (<span style="color:#a00"><b>Best paper award</b></span> @ <a href="https://mlog-workshop.github.io/">MLoG workshop</a>)
+  - kind: description
+    tag: p
+    text: We address several common pitfalls in training graph neural networks for link prediction.
+  - kind: links
+    tag: p
+    links:
+    - label: paper
+      url: https://arxiv.org/abs/2306.00899
+    - label: code
+      url: https://github.com/jwzhi/SpotTarget
+  - kind: extra
+    tag: div
+    text: The paper is also presented at <a href="http://www.mlgworkshop.org/2023/">19th International Workshop on Mining and Learning With Graphs</a>.
+- title: Understanding 3D Object Interaction from a Single Image.
+  image: /resources/interaction.png
+  image_style: 'margin-top: 10px; margin-bottom: 10px;'
+  authors:
+  - name: Shengyi Qian
+    self: true
+  - name: David Fouhey
+    url: https://cs.nyu.edu/~fouhey/
+  body:
+  - kind: venue
+    tag: div
+    text: ICCV 2023
+  - kind: description
+    tag: p
+    text: We detect potential 3D object interaction from a single image and a set of query points. Building on <a href="https://segment-anything.com/">Segment-Anything</a>, our model can predict whether the object is movable, rigid, and 3D locations, affordance, articulation, etc.
+  - kind: links
+    tag: div
+    links:
+    - label: project page
+      url: https://jasonqsy.github.io/3DOI/
+    - label: paper
+      url: https://arxiv.org/abs/2305.09664
+    - label: code
+      url: https://github.com/JasonQSY/3DOI
+    - label: video
+      url: https://www.youtube.com/watch?v=YDIL93XxHyk
+  - kind: links
+    tag: p
+    links:
+    - label: OpenXLab demo (with gpu)
+      url: https://openxlab.org.cn/apps/detail/JasonQSY/3DOI
+    - label: HF demo (cpu)
+      url: https://huggingface.co/spaces/shengyi-qian/3DOI
+  - kind: extra
+    tag: div
+    text: The paper is also presented at <a href="https://sites.google.com/view/cvpr2023-3d-vision-robotics">CVPR 2023 Workshop on 3D Vision and Robotics</a>.
+- title: 'Sound Localization from Motion: Jointly Learning Sound Direction and Camera Rotation.'
+  image: /resources/SLfM.jpg
+  image_style: 'margin-top: 20px; margin-bottom: 40px;'
+  authors:
+  - name: Ziyang Chen
+    url: https://ificl.github.io/
+  - name: Shengyi Qian
+    self: true
+  - name: Andrew Owens
+    url: http://andrewowens.com/
+  body:
+  - kind: venue
+    tag: div
+    text: ICCV 2023
+  - kind: description
+    tag: p
+    text: We jointly learn to localize sound sources from audio and to estimate camera rotations from images. Our method is entirely self-supervised.
+  - kind: links
+    tag: p
+    links:
+    - label: project page
+      url: https://ificl.github.io/SLfM/
+    - label: paper
+      url: https://arxiv.org/abs/2303.11329
+    - label: code
+      url: https://github.com/IFICL/SLfM
+    - label: bibtex
+      url: https://ificl.github.io/SLfM/docs/bibtex.txt
+- title: Understanding 3D Object Articulation in Internet Videos.
+  image: /resources/articulation.png
+  image_style: 'margin-top: 40px; margin-bottom: 40px;'
+  authors:
+  - name: Shengyi Qian
+    self: true
+  - name: Linyi Jin
+    url: https://jinlinyi.github.io/
+  - name: Chris Rockwell
+    url: https://crockwell.github.io/
+  - name: Siyi Chen
+    url: https://chicychen.github.io/
+  - name: David Fouhey
+    url: https://cs.nyu.edu/~fouhey/
+  body:
+  - kind: venue
+    tag: div
+    text: CVPR 2022
+  - kind: description
+    tag: p
+    text: We propose to investigate detecting and characterizing the 3D planar articulation of objects from ordinary videos.
+  - kind: links
+    tag: p
+    links:
+    - label: project page
+      url: https://jasonqsy.github.io/Articulation3D/
+    - label: paper
+      url: https://arxiv.org/abs/2203.16531
+    - label: code
+      url: https://github.com/JasonQSY/Articulation3D
+    - label: bibtex
+      url: https://cs.nyu.edu/~fouhey/2022/articulation/qian22.bib
+    - label: CVPR talk
+      url: https://www.youtube.com/watch?v=yUptXNEMS6g
+- title: Recognizing Scenes from Novel Viewpoints.
+  image: /resources/viewseg.png
+  image_style: 'margin-top: 40px; margin-bottom: 40px;'
+  authors:
+  - name: Shengyi Qian
+    self: true
+  - name: Alexander Kirillov
+    url: https://alexander-kirillov.github.io/
+  - name: Nikhila Ravi
+    url: https://nikhilaravi.com/
+  - name: Devendra Singh Chaplot
+    url: https://devendrachaplot.github.io/
+  - name: Justin Johnson
+    url: https://web.eecs.umich.edu/~justincj/
+  - name: David Fouhey
+    url: https://cs.nyu.edu/~fouhey/
+  - name: Georgia Gkioxari
+    url: https://gkioxari.github.io/
+  body:
+  - kind: venue
+    tag: div
+    text: arXiv 2021
+  - kind: description
+    tag: p
+    text: We propose ViewSeg, which takes as input a few RGB images of a new scene and recognizes the scene from novel viewpoints by segmenting it into semantic categories.
+  - kind: links
+    tag: p
+    links:
+    - label: project page
+      url: https://jasonqsy.github.io/viewseg
+    - label: paper
+      url: https://arxiv.org/abs/2112.01520
+    - label: code
+      url: https://github.com/facebookresearch/viewseg
+- title: Planar Surface Reconstruction from Sparse Views.
+  image: /resources/sparse_planes.png
+  image_style: 'margin-top: 40px; margin-bottom: 40px;'
+  authors:
+  - name: Linyi Jin
+    url: https://jinlinyi.github.io/
+  - name: Shengyi Qian
+    self: true
+  - name: Andrew Owens
+    url: http://andrewowens.com/
+  - name: David Fouhey
+    url: https://cs.nyu.edu/~fouhey/
+  body:
+  - kind: venue
+    tag: div
+    text: ICCV 2021
+  - kind: description
+    tag: p
+    text: We create a planar reconstruction of a scene from two very distant camera viewpoints.
+  - kind: links
+    tag: p
+    links:
+    - label: project page
+      url: https://jinlinyi.github.io/SparsePlanes/
+    - label: paper
+      url: https://arxiv.org/abs/2103.14644
+    - label: code
+      url: https://github.com/jinlinyi/SparsePlanes
+    - label: bibtex
+      url: http://fouheylab.eecs.umich.edu/~jinlinyi/2021/sparseplane.bib
+    - label: ICCV talk
+      url: https://www.youtube.com/watch?v=US3EKPe3nAw
+    - label: ICCV poster
+      url: https://www.dropbox.com/s/e0wwkojeu3w9owe/poster.pdf?dl=0
+- title: 'Associative3D: Volumetric Reconstruction from Sparse Views.'
+  image: /resources/associative3d.png
+  image_style: 'margin-top: 40px; margin-bottom: 40px;'
+  authors:
+  - name: Shengyi Qian
+    self: true
+    mark: '*'
+    mark_plain: true
+  - name: Linyi Jin
+    url: https://jinlinyi.github.io/
+    mark: '*'
+    mark_plain: true
+  - name: David Fouhey
+    url: https://cs.nyu.edu/~fouhey/
+  body:
+  - kind: venue
+    tag: div
+    text: ECCV 2020
+  - kind: description
+    tag: p
+    text: We present Associative3D, which addresses 3D volumetric reconstruction from two views of a scene with an unknown camera, by simultaneously reconstructing objects and figuring out their relationship.
+  - kind: links
+    tag: div
+    links:
+    - label: project page
+      url: https://jasonqsy.github.io/Associative3D
+    - label: paper
+      url: https://arxiv.org/abs/2007.13727
+    - label: code
+      url: https://github.com/JasonQSY/Associative3D
+    - label: bibtex
+      url: http://fouheylab.eecs.umich.edu/~syqian/2020/associative3d/associative3d.bib
+    - label: ECCV 1-min overview
+      url: https://www.youtube.com/watch?v=_magqrpKsWI&feature=youtu.be
+  - kind: links
+    tag: p
+    links:
+    - label: ECCV talk
+      url: https://www.youtube.com/watch?v=sygHC8r26bc&feature=youtu.be
+    - label: slides
+      url: https://www.dropbox.com/s/wlb9rxum05vymko/associative3d_eecv_slides.pptx?dl=0
+  - kind: extra
+    tag: div
+    text: Invited presentation at ECCV 2020 Workshop <a href="https://holistic-3d.github.io/eccv20/index.html">Holistic Scene Structures for 3D Vision</a>.
+- title: 'OASIS: A Large-Scale Dataset for Single-Image 3D in the Wild.'
+  image: /resources/oasis.png
+  authors:
+  - name: Weifeng Chen
+    url: https://wfchen-umich.github.io/wfchen.github.io/
+  - name: Shengyi Qian
+    self: true
+  - name: David Fan
+    url: https://davidfan.io/
+  - name: Noriyuki Kojima
+    url: https://kojimano.github.io/
+  - name: Max Hamilton
+  - name: Jia Deng
+    url: http://www.cs.princeton.edu/~jiadeng/
+  body:
+  - kind: venue
+    tag: div
+    text: CVPR 2020
+  - kind: description
+    tag: p
+    text: We present Open Annotations of Single Image Surfaces (OASIS), a dataset for single-image 3D in the wild consisting of dense annotations of detailed 3D geometry for Internet images.
+  - kind: links
+    tag: div
+    links:
+    - label: project page
+      url: https://oasis.cs.princeton.edu/
+    - label: paper
+      url: https://arxiv.org/abs/2007.13215
+    - label: code
+      url: https://github.com/princeton-vl/oasis
+    - label: bibtex
+      url: http://fouheylab.eecs.umich.edu/~syqian/2020/oasis/oasis.bib
+- title: Learning Single-Image Depth from Videos using Quality Assessment Networks.
+  image: /resources/youtube3d.png
+  authors:
+  - name: Weifeng Chen
+    url: https://wfchen-umich.github.io/wfchen.github.io/
+  - name: Shengyi Qian
+    self: true
+  - name: Jia Deng
+    url: http://www.cs.princeton.edu/~jiadeng/
+  body:
+  - kind: venue
+    tag: div
+    text: CVPR 2019
+  - kind: description
+    tag: p
+    text: We propose a method to automatically generate training data for single-view depth through Structure-from-Motion (SfM) on Internet videos.
+  - kind: links
+    tag: div
+    links:
+    - label: project page
+      url: https://wfchen-umich.github.io/wfchen.github.io/youtube3d/
+    - label: paper
+      url: https://arxiv.org/abs/1806.09573
+    - label: code
+      url: https://github.com/princeton-vl/YouTube3D
+    - label: bibtex
+      url: http://fouheylab.eecs.umich.edu/~syqian/2019/youtube3d/youtube3d.bib
