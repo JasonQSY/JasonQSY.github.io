@@ -1,0 +1,14 @@
+{% assign pub = include.pub %}
+<div class="row homepage-row">
+  <div class="pub-img">
+    {% if pub.image_link %}<a href="{{ pub.image_link }}">{% endif %}<img{% if pub.image_style %} style="{{ pub.image_style }}"{% endif %} src="{{ pub.image }}"{% if pub.image_alt %} alt="{{ pub.image_alt }}"{% endif %}>{% if pub.image_link %}</a>{% endif %}
+  </div>
+  <div class="pub-content">
+    <div>
+      <div class="pub-title">{{ pub.title }}</div>
+      {% if pub.note %}<div><strong>{{ pub.note }}</strong></div>{% endif %}
+      {% if pub.authors %}<div>{% for author in pub.authors %}{% if author.self %}<strong><u>{{ author.name }}</u></strong>{% elsif author.url %}<a href="{{ author.url }}">{{ author.name }}{% if author.mark_inside %}{{ author.mark }}{% endif %}</a>{% else %}{{ author.name }}{% endif %}{% if author.mark %}{% unless author.mark_inside %}{% if author.mark_plain %}{{ author.mark }}{% else %}<sup><span class="author-mark">{{ author.mark }}</span></sup>{% endif %}{% endunless %}{% endif %}{% unless forloop.last %}, {% else %}.{% endunless %}{% endfor %}</div>{% endif %}
+      {% for block in pub.body %}{% if block.kind == 'links' %}<{{ block.tag }}>{% for link in block.links %} [<a href="{{ link.url }}">{{ link.label }}</a>]{% endfor %}</{{ block.tag }}>{% else %}<{{ block.tag }}>{{ block.text }}</{{ block.tag }}>{% endif %}{% endfor %}
+    </div>
+  </div>
+</div>
