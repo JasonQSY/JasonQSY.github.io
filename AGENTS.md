@@ -4,7 +4,7 @@ Instructions for AI agents working on this repository. The repository owner revi
 
 ## Workflow
 
-- Work on a branch and open a pull request against `master`. Never push directly to `master`.
+- Work on a branch and open a pull request against `main`. Never push directly to `main`.
 - Describe what changed and how it was verified in the pull request body.
 - Do not commit generated output (`_site/`, `vendor/`); both are git-ignored.
 
@@ -16,7 +16,7 @@ Instructions for AI agents working on this repository. The repository owner revi
   bundle exec jekyll build --strict_front_matter
   ```
 
-- The CI workflow (`.github/workflows/ci.yml`) runs the same build on pushes and pull requests to `master`, and GitHub Pages deploys `master`.
+- The CI workflow (`.github/workflows/ci.yml`) runs the same build on pushes and pull requests to `main`, and GitHub Pages deploys `main`.
 - When changing templates or data files, compare the rendered output against the previous build (page text, links, and images) and report any differences; whitespace-only differences are fine.
 
 ## Content

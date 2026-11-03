@@ -37,7 +37,7 @@ Images live in `resources/` and `static/`. Keep their filenames and formats stab
 
 ## Deploy
 
-Pushing to `master` triggers the CI workflow (`.github/workflows/ci.yml`), which builds the site with `bundle exec jekyll build --strict_front_matter`, and GitHub Pages deploys the result. Changes should go through a pull request for review, not a direct push to `master`.
+Pushing to `main` triggers the CI workflow (`.github/workflows/ci.yml`), which builds the site with `bundle exec jekyll build --strict_front_matter`, and GitHub Pages deploys the result. Changes should go through a pull request for review, not a direct push to `main`.
 
 ## Reference
 
