@@ -1,3 +1,50 @@
+- title: 'Unbundling Multimodal Vision Encoding'
+  image: /resources/unbundling.png
+  image_style: 'margin-top: 10px; margin-bottom: 10px;'
+  image_alt: 'Unbundling Multimodal Vision Encoding overview: four recipes testing the vision encoder design choices.'
+  image_link: https://arxiv.org/abs/2611.17334
+  authors:
+  - name: Ellis Brown
+    url: https://ellisbrown.github.io/
+    mark: '*'
+  - name: Chris Hoang
+    url: https://www.chrishoang.com/
+    mark: '*'
+  - name: Shengyi Qian
+    self: true
+  - name: Shang-Wen Li
+    url: https://swdanielli.github.io/
+  - name: Mike Lewis
+    url: https://scholar.google.com/citations?user=SnQnQicAAAAJ
+  - name: Marjan Ghazvininejad
+    url: https://ai.meta.com/people/711449320883014/marjan-ghazvininejad/
+  - name: Luke Zettlemoyer
+    url: https://homes.cs.washington.edu/~lsz/
+  - name: Lucas Beyer
+    url: https://lucasb.eyer.be/
+  - name: Mengye Ren
+    url: https://www.mengyeren.com/
+    mark: †
+  - name: Jakob Verbeek
+    url: https://thoth.inrialpes.fr/~verbeek/
+    mark: †
+  - name: Saining Xie
+    url: https://www.sainingxie.com/
+    mark: †
+  - name: Hu Xu
+    url: https://howardhsu.github.io/
+    mark: †
+  body:
+  - kind: venue
+    tag: p
+    text: arXiv 2026.
+  - kind: links
+    tag: p
+    links:
+    - label: project page
+      url: https://unbundling.github.io
+    - label: paper
+      url: https://arxiv.org/abs/2611.17334
 - title: 'Muse Glimmer 30B: An On-Device Agentic Model'
   image: /resources/muse_glimmer_benchmarks.svg
   image_style: 'margin-top: 10px; margin-bottom: 10px;'
@@ -99,7 +146,7 @@
   - name: Jakob Verbeek
     url: https://thoth.inrialpes.fr/~verbeek/
   - name: Luke Zettlemoyer
-    url: https://www.cs.washington.edu/people/faculty/lsz
+    url: https://homes.cs.washington.edu/~lsz/
     mark: †
   - name: Koustuv Sinha
     url: https://koustuvsinha.com/
